@@ -12,11 +12,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/rchang825/leetcode/tree/master/0001-two-sum) |
+| [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
 ## String
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/rchang825/leetcode/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/rchang825/leetcode/tree/master/0125-valid-palindrome) |
+| [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
 ## Stack
 |  |
 | ------- |
@@ -53,4 +55,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0226-invert-binary-tree](https://github.com/rchang825/leetcode/tree/master/0226-invert-binary-tree) |
+## Sorting
+|  |
+| ------- |
+| [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
