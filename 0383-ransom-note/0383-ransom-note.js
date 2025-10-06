@@ -16,11 +16,10 @@ var canConstruct = function(ransomNote, magazine) {
             letters[magazine.charAt(i)] = 1;
         }
     }
-    console.log(letters);
+    // console.log(letters);
     // iterate through ransomNote
     let letterIndex = 0;
     while (letterIndex < ransomNote.length) {
-        // return false if letter not in map
         let l = ransomNote.charAt(letterIndex);
         // decrement count or delete from map if reaches 0
         if (letters.hasOwnProperty(l)) {
@@ -31,6 +30,7 @@ var canConstruct = function(ransomNote, magazine) {
             }
             letterIndex++;
         } else {
+            // return false if letter not in map
             return false;
         }
     }
