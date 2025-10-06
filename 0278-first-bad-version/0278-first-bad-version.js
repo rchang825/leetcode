@@ -24,26 +24,20 @@ var solution = function(isBadVersion) {
     return function(n) {
         var search = function(start, end) {
             if (start === end) {
-                return -1;
+                return start;
             }
             // binary search: find middle
             let mid = Math.floor((end - start) / 2) + start;
             let isBad = isBadVersion(mid);
-            console.log('start', start, 'end', end);
-            console.log('isBadVersion at', mid, ':', isBad);
+            // console.log('start', start, 'end', end);
+            // console.log('isBadVersion at', mid, ':', isBad);
             // if bad, go left
             if (isBad) {
-                if ( mid === start) {
-                    return mid;
-                }
                 return search(start, mid);
             }
             // if good, go right
             if (!isBad) {
-                if (mid < end && isBadVersion(mid+1)) {
-                    return mid+1;
-                }
-                return search(mid, end);
+                return search(mid+1, end);
             }
             return -1;
         };
