@@ -4,27 +4,29 @@
  * @return {number[][]}
  */
 var insert = function(intervals, newInterval) {
-    // define updated intervals array
     let updated = [];
-    // find where newInterval should go by iterating through intervals
+    // three cases
+    // case 1: no conflict and not at correct "place" to insert interval yet
     let i = 0;
-    // move existing, untouched intervals onto other array
     while (i < intervals.length && intervals[i][1] < newInterval[0]) {
-        // console.log('no conflict with existing interval', intervals[i]);
         updated.push(intervals[i]);
         i++;
     }
+    // console.log('added all unchanged intervals', updated);
+    // case 2: insert interval and resolve merge conflicts
     while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
-        // console.log('resolving merge conflicts between', intervals[i], 'and', newInterval);
-        newInterval = [Math.min(intervals[i][0], newInterval[0]), Math.max(intervals[i][1], newInterval[1])];
+        newInterval[0] = Math.min(newInterval[0], intervals[i][0]);
+        newInterval[1] = Math.max(newInterval[1], intervals[i][1]);
         i++;
     }
-    // console.log('adding interval after resolving conflicts', newInterval);
     updated.push(newInterval);
+    // console.log('added in new interval, merging when necessary', updated);
+    // case 3: insert the rest of existing intervals without conflict
     while (i < intervals.length) {
-        // console.log('no conflicts, adding', intervals[i]);
         updated.push(intervals[i]);
         i++;
     }
+    // console.log('added in rest of intervals if applciable', updated);
+    // return updated intervals array
     return updated;
 };
