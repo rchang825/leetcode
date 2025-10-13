@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/rchang825/leetcode/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/rchang825/leetcode/tree/master/0015-3sum) |
 | [0053-maximum-subarray](https://github.com/rchang825/leetcode/tree/master/0053-maximum-subarray) |
 | [0057-insert-interval](https://github.com/rchang825/leetcode/tree/master/0057-insert-interval) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rchang825/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -64,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/rchang825/leetcode/tree/master/0015-3sum) |
 | [0125-valid-palindrome](https://github.com/rchang825/leetcode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/rchang825/leetcode/tree/master/0141-linked-list-cycle) |
 | [0908-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0908-middle-of-the-linked-list) |
@@ -102,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/rchang825/leetcode/tree/master/0015-3sum) |
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rchang825/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
