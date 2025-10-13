@@ -13,7 +13,7 @@ var lengthOfLongestSubstring = function(s) {
     let right = 1;
     let maxLength = 0;
     counts[s.charAt(0)] = 1;
-    while (left < right && left >= 0 && right < s.length) {
+    while (right < s.length) {
         if (counts.hasOwnProperty(s.charAt(right))) {
             // close window from left until right is add-able
             while (counts.hasOwnProperty(s.charAt(right)) && left < right) {
@@ -22,7 +22,7 @@ var lengthOfLongestSubstring = function(s) {
             }
         }
         counts[s.charAt(right)] = 1;
-        maxLength = Math.max(maxLength, Object.keys(counts).length);
+        maxLength = Math.max(maxLength, right-left + 1);
         right++;
     }
     return maxLength;
