@@ -19,6 +19,38 @@ var levelOrder = function(root) {
     // define res array
     let res = [];
     // add root to queue with height 0
+    queue.push(root);
+    // run until queue empty
+    while (queue.length !== 0) {
+        let level = [];
+        let levelSize = queue.length;
+        // pop levelSize elements from queue, visit, and add children to queue
+        for (var i = 0; i < levelSize; i++) {
+            let curr = queue.shift();
+            level.push(curr.val);
+            if (curr.left) {
+                queue.push(curr.left);
+            }
+            if (curr.right) {
+                queue.push(curr.right);
+            }
+        }
+        // this will be one level represented by one array
+        // add array to res
+        res.push(level);
+        // console.log('res', res);
+    }
+    return res;
+};
+var levelOrderInitial = function(root) {
+    if (!root) {
+        return [];
+    }
+    // queue
+    let queue = [];
+    // define res array
+    let res = [];
+    // add root to queue with height 0
     queue.push([root, 0]);
     // run until queue empty
     while (queue.length !== 0) {
