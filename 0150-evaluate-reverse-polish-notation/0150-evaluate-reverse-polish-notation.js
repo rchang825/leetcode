@@ -24,7 +24,7 @@ var evalRPN = function(tokens) {
             let val2 = stack.pop();
             let val1 = stack.pop();
             let calculation = operators[tokens[i]](parseInt(val1), parseInt(val2));
-            console.log(val1, tokens[i], val2, '=', calculation);
+            // console.log(val1, tokens[i], val2, '=', calculation);
             stack.push(calculation);
         } else {
             stack.push(tokens[i]);
