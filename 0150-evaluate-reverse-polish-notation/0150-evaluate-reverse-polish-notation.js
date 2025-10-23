@@ -9,21 +9,19 @@ var evalRPN = function(tokens) {
             return val1 + val2;
         },
         '-': (val1, val2) => {
-            return val1 - val2;
+            return val2 - val1;
         },
         '*': (val1, val2) => {
             return val1 * val2;
         },
         '/': (val1, val2) => {
-            return Math.trunc(val1 / val2); // always truncates toward zero
+            return Math.trunc(val2 / val1); // always truncates toward zero
         }
     }
     let i = 0;
     while (i < tokens.length) {
         if (operators.hasOwnProperty(tokens[i])) {
-            let val2 = stack.pop();
-            let val1 = stack.pop();
-            let calculation = operators[tokens[i]](parseInt(val1), parseInt(val2));
+            let calculation = operators[tokens[i]](parseInt(stack.pop()), parseInt(stack.pop()));
             // console.log(val1, tokens[i], val2, '=', calculation);
             stack.push(calculation);
         } else {
