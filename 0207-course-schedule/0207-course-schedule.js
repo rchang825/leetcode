@@ -4,44 +4,42 @@
  * @return {boolean}
  */
 var canFinish = function(numCourses, prerequisites) {
-    let indegree = [];
-    for (var i = 0; i < numCourses; i++) {
-        indegree[i] = 0;
-    }
-    // console.log(indegree);
     let graph = new Array(numCourses);
-    // console.log(graph);
-    prerequisites.forEach((prereq) => {
-        if (!graph[prereq[1]]) {
-            graph[prereq[1]] = [prereq[0]];
+    // build graph with adjacency list
+    for (var i = 0; i < prerequisites.length; i++) {
+        if (!graph[prerequisites[i][0]]) {
+            graph[prerequisites[i][0]] = [prerequisites[i][1]];
         } else {
-            graph[prereq[1]].push(prereq[0]);
+            graph[prerequisites[i][0]].push(prerequisites[i][1]);
         }
-        indegree[prereq[0]] += 1;
-    });
+    }
     // console.log(graph);
-    // console.log('indegree', indegree);
-    let queue = [];
-    for (var j = 0; j < numCourses; j++) {
-        // console.log('indegree[j]', indegree[j]);
-        if (indegree[j] == 0) {
-            queue.push(j);
+    let visited = {};
+    var dfs = function(course) {
+        if (!graph[course]) {
+            return true;
+        }
+        if (visited[course]) { // cycle detected
+            return false;
+        }
+        // visit course
+        visited[course] = true;
+        for (var i = 0; i < graph[course].length; i++) { // check edges
+            // return early if cycle detected
+            if (!dfs(graph[course][i])) {
+                return false;
+            }
+        }
+        visited[course] = false; // backtrack
+        graph[course] = []; // remove node and its edges
+        return true;
+    };
+    // call dfs for all nodes in graph (all courses)
+    for (var i = 0; i < numCourses; i++) {
+        // return early if cycle detected
+        if (!dfs(i)) {
+            return false;
         }
     }
-    // console.log(queue);
-    let visited = 0;
-    while (queue.length !== 0) {
-        let curr = queue.shift();
-        // console.log(curr);
-        visited++;
-        if (graph[curr]) {
-            graph[curr].forEach((neighbor) => {
-                indegree[neighbor] -= 1;
-                if (indegree[neighbor] === 0) {
-                    queue.push(neighbor);
-                }
-            });
-        }
-    }
-    return numCourses === visited;
+    return true;
 };
