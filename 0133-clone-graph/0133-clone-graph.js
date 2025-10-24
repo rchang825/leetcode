@@ -14,20 +14,19 @@ var cloneGraph = function(node) {
     if (!node) {
         return node;
     }
-    let queue = [];
-    let clones = {};
-    clones[node.val] = new Node(node.val);
-    queue.push(node);
-    while (queue.length !== 0) {
-        let curr = queue.shift();
-        let clone = clones[curr.val];
-        curr.neighbors.forEach((neighbor) => {
-            if (!clones.hasOwnProperty(neighbor.val)) {
-                clones[neighbor.val] = new Node(neighbor.val);
-                queue.push(neighbor);
-            }
-            clone.neighbors.push(clones[neighbor.val]);
-        });
+    // need to keep track of what has already been visited/cloned
+    const cloned = {};
+    // while there are neighbors that haven't been visited, traverse
+    var dfs = function(node) {
+        if (!cloned.hasOwnProperty(node.val)) { // not already visited
+            cloned[node.val] = new _Node(node.val);
+            // console.log('cloned curr', cloned[node.val]);
+            node.neighbors.forEach((neighbor) => {
+                // console.log('neighbor', neighbor);
+                cloned[node.val].neighbors.push(dfs(neighbor));
+            });
+        }
+        return cloned[node.val];
     }
-    return clones[node.val];
+    return dfs(node);
 };
