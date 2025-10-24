@@ -4,40 +4,42 @@
  * @return {boolean}
  */
 var canFinish = function(numCourses, prerequisites) {
-    let graph = new Array(numCourses);
-    // build graph with adjacency list
+    // build adjacency lists to represent graph (each node points to prereqs)
+    let graph = [...new Array(numCourses)].map(() => new Array());
+    // console.log(graph);
     for (var i = 0; i < prerequisites.length; i++) {
-        if (!graph[prerequisites[i][0]]) {
-            graph[prerequisites[i][0]] = [prerequisites[i][1]];
-        } else {
+        if (graph[prerequisites[i][0]]) {
             graph[prerequisites[i][0]].push(prerequisites[i][1]);
+        } else {
+            graph[prerequisites[i][0]] = [prerequisites[i][1]];
         }
     }
-    // console.log(graph);
+    console.log(graph);
     let visited = {};
-    var dfs = function(course) {
-        if (!graph[course]) {
+    var detectCycle = function(node) {
+        // console.log('curr', node);
+        // base case: already visited, BAD, return true;
+        if (visited[node]) {
+            // console.log('cycle detected');
             return true;
         }
-        if (visited[course]) { // cycle detected
-            return false;
-        }
-        // visit course
-        visited[course] = true;
-        for (var i = 0; i < graph[course].length; i++) { // check edges
-            // return early if cycle detected
-            if (!dfs(graph[course][i])) {
-                return false;
+        // visit node
+        visited[node] = true;
+        for(var i = 0; i < graph[node].length; i++) {
+            // console.log('neighbor', graph[node][i]);
+            if (detectCycle(graph[node][i])) {
+                // console.log('cycle detected');
+                return true;
             }
         }
-        visited[course] = false; // backtrack
-        graph[course] = []; // remove node and its edges
-        return true;
-    };
-    // call dfs for all nodes in graph (all courses)
+        // backtrack
+        visited[node] = false;
+        // don't need to access node again
+        graph[node] = [];
+        return false;
+    }
     for (var i = 0; i < numCourses; i++) {
-        // return early if cycle detected
-        if (!dfs(i)) {
+        if (detectCycle(i)) {
             return false;
         }
     }
