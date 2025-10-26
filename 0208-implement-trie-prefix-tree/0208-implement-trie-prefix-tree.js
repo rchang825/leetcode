@@ -1,12 +1,11 @@
-
-var TrieNode = function(val, children) {
-    this.val = val === undefined ? false : val;
+var TrieNode = function(word, children) {
+    this.word = word ===undefined ? false : word;
     this.children = children === undefined ? {} : children;
-};
+}
 
 var Trie = function() {
     this.root = new TrieNode();
-}
+};
 
 /** 
  * @param {string} word
@@ -15,13 +14,12 @@ var Trie = function() {
 Trie.prototype.insert = function(word) {
     let curr = this.root;
     for (var i = 0; i < word.length; i++) {
-        let ch = word.charAt(i);
-        if (!curr.children[ch]) {
-            curr.children[ch] = new TrieNode();
+        if (!curr.children.hasOwnProperty(word.charAt(i))) {
+            curr.children[word.charAt(i)] = new TrieNode();
         }
-        curr = curr.children[ch];
+        curr = curr.children[word.charAt(i)];
     }
-    curr.val = true;
+    curr.word = true; // make a word here
 };
 
 /** 
@@ -31,13 +29,14 @@ Trie.prototype.insert = function(word) {
 Trie.prototype.search = function(word) {
     let curr = this.root;
     for (var i = 0; i < word.length; i++) {
-        let ch = word.charAt(i);
-        if (!curr.children[ch]) {
+        if (curr.children[word.charAt(i)]) {
+            curr = curr.children[word.charAt(i)];
+        } else {
             return false;
         }
-        curr = curr.children[ch];
     }
-    return curr.val;
+    // final check: is this a word?
+    return curr.word;
 };
 
 /** 
@@ -47,11 +46,11 @@ Trie.prototype.search = function(word) {
 Trie.prototype.startsWith = function(prefix) {
     let curr = this.root;
     for (var i = 0; i < prefix.length; i++) {
-        let ch = prefix.charAt(i);
-        if (!curr.children[ch]) {
+        if (curr.children[prefix.charAt(i)]) {
+            curr = curr.children[prefix.charAt(i)];
+        } else {
             return false;
         }
-        curr = curr.children[ch];
     }
     return true;
 };
