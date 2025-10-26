@@ -26,7 +26,7 @@ var coinChange = function(coins, amount) {
             let curr = dp(amount - coins[i], memo);
             if (curr > -1) {
                min = Math.min(curr + 1, min); 
-            }
+            } 
         }
         if (min === Infinity) {
             memo[amount] = -1;
