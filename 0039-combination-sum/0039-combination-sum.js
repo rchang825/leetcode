@@ -4,23 +4,27 @@
  * @return {number[][]}
  */
 var combinationSum = function(candidates, target) {
+    // backtracking
     let res = [];
-    let createCombination = function(i, curr, currSum) {
+
+    var makeComb = function(curr, currSum, index) {
+        // console.log('currSum', currSum, 'curr', curr);
         if (currSum === target) {
-            res.push([...curr]);
+            // console.log('combination found!', curr);
+            res.push(curr.slice());
+        }
+        if (currSum > target) {
             return;
         }
-        if (currSum > target || i >= candidates.length) {
-            // out of bounds
-            return;
+        for (var i = index; i < candidates.length; i++) {
+            curr.push(candidates[i]);
+            makeComb(curr, currSum + candidates[i], i);
+            curr.pop();
         }
-        curr.push(candidates[i]);
-        // try adding same element again
-        createCombination(i, curr, currSum + candidates[i]);
-        curr.pop();
-        // move onto next element
-        createCombination(i + 1, curr, currSum);
-    };
-    createCombination(0, [], 0);
+    }
+    for (var i = 0; i < candidates.length; i++) {
+        makeComb([candidates[i]], candidates[i], i);
+    }
+
     return res;
 };
