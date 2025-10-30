@@ -12,24 +12,19 @@
  * @return {TreeNode}
  */
 var lowestCommonAncestor = function(root, p, q) {
-    if (root === p || p === q) {
+    if (root === null || root === p || root === q) {
+        return root;
+    }
+    if (p === q) {
         return p;
     }
-    var hasChild = function(root, child) {
-        if (root === null) {
-            return false;
+    let left = lowestCommonAncestor(root.left, p, q);
+    let right = lowestCommonAncestor(root.right, p, q);
+    if (left) {
+        if (right) {
+            return root;
         }
-        if (root === child) {
-            return true;
-        }
-        return hasChild(root.left, child) || hasChild(root.right, child);
+        return left;
     }
-    let ancestor = root;
-    if (root.left && hasChild(root.left, p) && hasChild(root.left, q)) {
-        ancestor = lowestCommonAncestor(root.left, p, q);
-    }
-    if (root.right && hasChild(root.right, p) && hasChild(root.right, q)) {
-        ancestor = lowestCommonAncestor(root.right, p, q);
-    }
-    return ancestor;
+    return right;
 };
