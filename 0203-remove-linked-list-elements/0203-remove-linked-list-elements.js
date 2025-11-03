@@ -11,33 +11,20 @@
  * @return {ListNode}
  */
 var removeElements = function(head, val, curr) {
-    // console.log('curr', curr);
     if (curr === undefined) {
-        // while head exists and should be deleted
         while (head && head.val === val) {
-            // head = head.next
             head = head.next;
         }
         curr = head;  
-        // console.log('curr = head', curr);
     }
-    // base case: curr is null
     if (curr === null) {
-        // return the "new" head
         return head;
     } else {
-        // set a nextCurr pointer
-        // console.log('curr', curr);
         let nextCurr = curr.next;
-        // while next node exists and should be deleted
         while (nextCurr && nextCurr.val === val) {
-            // move nextCurr pointer
             nextCurr = nextCurr.next;
         }
-        // set curr.next to be nextCurr
         curr.next = nextCurr;
-        // return removeElements(head, val, curr.next)
-        // console.log('going to recurse now! curr = ', curr, 'curr.next=', curr.next);
         return removeElements(head, val, curr.next);
     }
 };
