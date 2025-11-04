@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/rchang825/leetcode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/rchang825/leetcode/tree/master/0046-permutations) |
 | [0053-maximum-subarray](https://github.com/rchang825/leetcode/tree/master/0053-maximum-subarray) |
+| [0054-spiral-matrix](https://github.com/rchang825/leetcode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/rchang825/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/rchang825/leetcode/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/rchang825/leetcode/tree/master/0075-sort-colors) |
@@ -176,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/rchang825/leetcode/tree/master/0054-spiral-matrix) |
 | [0200-number-of-islands](https://github.com/rchang825/leetcode/tree/master/0200-number-of-islands) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/rchang825/leetcode/tree/master/0733-flood-fill) |
@@ -236,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/rchang825/leetcode/tree/master/0054-spiral-matrix) |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 ## Geometry
 |  |
