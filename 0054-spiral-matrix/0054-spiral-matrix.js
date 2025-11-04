@@ -9,49 +9,41 @@ var spiralOrder = function(matrix) {
             return;
         }
         // go right
-        while (cMin < c && c < cMax && rMin < r && r < rMax) {
-            res.push(matrix[r][c++]);
+        if (rMin < r && r < rMax) {
+            while (cMin < c && c < cMax) {
+                res.push(matrix[r][c++]);
+            }
+            rMin++;
+            c--;
+            r++;
         }
-        rMin++;
-        c--;
-        // console.log(res);
-        // console.log('rMin now', rMin);
-        
         // go down
-        r++;
-        while (cMin < c && c < cMax && rMin < r && r < rMax) {
-            res.push(matrix[r++][c]);
+        if (cMin < c && c < cMax) {
+            while (rMin < r && r < rMax) {
+                res.push(matrix[r++][c]);
+            }
+            cMax--; 
+            r--;
+            c--;
         }
-        cMax--; 
-        r--;
         // go left
-        c--;
-        while (cMin < c && c < cMax && rMin < r && r < rMax) {
-            res.push(matrix[r][c--]);
+        if (rMin < r && r < rMax) {
+            while (cMin < c && c < cMax) {
+                res.push(matrix[r][c--]);
+            }
+            rMax--; 
+            c++;
+            r--;
         }
-        rMax--; 
-        c++;
-        // console.log(res);
-        // console.log('rMax now', rMax);
         // go up
-        
-        r--;
-        while (cMin < c && c < cMax && rMin < r && r < rMax) {
-            res.push(matrix[r--][c]);
+        if (cMin < c && c < cMax) {
+            while (rMin < r && r < rMax) {
+                res.push(matrix[r--][c]);
+            }
+            cMin++;
+            r++; 
         }
-           cMin++;
-           r++; 
-        // console.log(res);
-        // console.log('cMin now', cMin);
-        // c = cMin - 1;
-        
-        // console.log(rMin, rMax, cMin, cMax);
-        if (rMin >= rMax || cMin >= cMax) {
-            return;
-        } else {
-            // console.log(res, 'recursing...');
-            helper(r, c + 1, rMin, rMax, cMin, cMax);
-        }
+        helper(r, c + 1, rMin, rMax, cMin, cMax);
     }
     helper(0, 0, -1, matrix.length, -1, matrix[0].length);
     return res;
