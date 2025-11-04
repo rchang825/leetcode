@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/rchang825/leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/rchang825/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0322-coin-change](https://github.com/rchang825/leetcode/tree/master/0322-coin-change) |
+| [0416-partition-equal-subset-sum](https://github.com/rchang825/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/rchang825/leetcode/tree/master/0733-flood-fill) |
@@ -90,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rchang825/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0139-word-break](https://github.com/rchang825/leetcode/tree/master/0139-word-break) |
 | [0322-coin-change](https://github.com/rchang825/leetcode/tree/master/0322-coin-change) |
+| [0416-partition-equal-subset-sum](https://github.com/rchang825/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 ## Two Pointers
 |  |
