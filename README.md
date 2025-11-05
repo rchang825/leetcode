@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0056-merge-intervals](https://github.com/rchang825/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/rchang825/leetcode/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/rchang825/leetcode/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rchang825/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0139-word-break](https://github.com/rchang825/leetcode/tree/master/0139-word-break) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/rchang825/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -234,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
+| [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/rchang825/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Simulation
 |  |
@@ -284,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0039-combination-sum](https://github.com/rchang825/leetcode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/rchang825/leetcode/tree/master/0046-permutations) |
+| [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
 ## Ordered Set
 |  |
 | ------- |
