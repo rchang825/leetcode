@@ -21,18 +21,13 @@ var rightSideView = function(root) {
     let queue = [];
     let res = [];
     queue.push([root, 0]);
-    // console.log(queue);
     while (queue.length !== 0) {
         let curr = queue.shift();
         let height = curr[1];
-        // console.log(curr[0]);
         if (curr[0] !== null) {
             res.push(curr[0].val);
-            // console.log('adding', curr[0].val);
             queue.push([curr[0].right, height + 1]);
             queue.push([curr[0].left, height + 1]);
-            // console.log(queue);
-            // console.log('going to check for same height', height, 'nodes to ignore...');
             while (queue.length !== 0 && height === queue[0][1]) {
                 let ignored = queue.shift();
                 if (ignored[0] !== null) {
