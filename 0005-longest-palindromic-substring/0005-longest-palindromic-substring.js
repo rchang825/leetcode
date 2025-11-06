@@ -13,7 +13,7 @@ var longestPalindrome = function(s) {
     let left = 0;
     let right = 0;
     for (var i = 0; i < s.length; i++) {
-        let odd = expand(i, i);
+        let odd = expand(i - 1, i + 1);
         let even = expand(i, i + 1);
         let maxLength = Math.max(odd, even);
         if (maxLength > right - left) {
