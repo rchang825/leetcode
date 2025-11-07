@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/rchang825/leetcode/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/rchang825/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/rchang825/leetcode/tree/master/0079-word-search) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rchang825/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rchang825/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0139-word-break](https://github.com/rchang825/leetcode/tree/master/0139-word-break) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/rchang825/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/rchang825/leetcode/tree/master/0020-valid-parentheses) |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
+| [0079-word-search](https://github.com/rchang825/leetcode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/rchang825/leetcode/tree/master/0125-valid-palindrome) |
 | [0139-word-break](https://github.com/rchang825/leetcode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/rchang825/leetcode/tree/master/0208-implement-trie-prefix-tree) |
@@ -131,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/rchang825/leetcode/tree/master/0079-word-search) |
 | [0098-validate-binary-search-tree](https://github.com/rchang825/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/rchang825/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/rchang825/leetcode/tree/master/0110-balanced-binary-tree) |
@@ -195,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/rchang825/leetcode/tree/master/0054-spiral-matrix) |
+| [0079-word-search](https://github.com/rchang825/leetcode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/rchang825/leetcode/tree/master/0200-number-of-islands) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/rchang825/leetcode/tree/master/0733-flood-fill) |
@@ -307,6 +311,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/rchang825/leetcode/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/rchang825/leetcode/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/rchang825/leetcode/tree/master/0079-word-search) |
 ## Ordered Set
 |  |
 | ------- |
