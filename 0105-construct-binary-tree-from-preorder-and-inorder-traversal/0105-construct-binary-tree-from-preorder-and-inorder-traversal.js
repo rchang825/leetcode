@@ -12,7 +12,7 @@
  * @return {TreeNode}
  */
 var buildTree = function(preorder, inorder) {
-    if (preorder.length === 0 || inorder.length === 0) {
+    if (inorder.length === 0) {
         return null;
     }
     let root = new TreeNode(preorder[0]);
@@ -20,7 +20,8 @@ var buildTree = function(preorder, inorder) {
     while (inorder[i] !== root.val) {
         i++;
     }
-    root.left = buildTree(preorder.slice(1), inorder.slice(0, i));
-    root.right = buildTree(preorder.slice(i + 1), inorder.slice(i + 1));
+    preorder.shift();
+    root.left = buildTree(preorder, inorder.slice(0, i));
+    root.right = buildTree(preorder, inorder.slice(i + 1));
     return root;
 };
