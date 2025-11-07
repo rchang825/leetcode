@@ -14,12 +14,12 @@ var letterCombinations = function(digits) {
         9: ['w', 'x', 'y', 'z'],
     }
     let makeCombination = function(curr, index) {
-        if (curr.length === digits.length) {
+        if (index === digits.length) {
             res.push(curr);
-            return curr;
+            return;
         } 
         letters[digits[index]].forEach((letter) => {
-            return makeCombination(curr + letter, index + 1);
+            makeCombination(curr + letter, index + 1);
         });
     }
 
