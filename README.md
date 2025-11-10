@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 ## String
@@ -71,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/rchang825/leetcode/tree/master/0344-reverse-string) |
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 ## Stack
@@ -281,6 +283,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/rchang825/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 ## Graph
 |  |
 | ------- |
