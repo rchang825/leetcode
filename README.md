@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/rchang825/leetcode/tree/master/0322-coin-change) |
 | [0416-partition-equal-subset-sum](https://github.com/rchang825/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
+| [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/rchang825/leetcode/tree/master/0733-flood-fill) |
 | [0792-binary-search](https://github.com/rchang825/leetcode/tree/master/0792-binary-search) |
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
+| [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 ## String
@@ -188,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rchang825/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
+| [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Binary Search
@@ -232,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
+| [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 ## Math
 |  |
 | ------- |
@@ -251,6 +255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/rchang825/leetcode/tree/master/0011-container-with-most-water) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
+| [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -276,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Quickselect
 |  |
