@@ -12,18 +12,20 @@
  * @return {number}
  */
 var kthSmallest = function(root, k) {
-    // build min heap while traversing tree from root
-    let arr = [];
-    let queue = [];
-    queue.push(root);
-    while (queue.length !== 0) {
-        let curr = queue.shift();
-        if (curr) {
-            arr.push(curr.val);
-            queue.push(curr.left);
-            queue.push(curr.right);
+    let count = 0;
+    let res = null;
+    var helper = function(curr) {
+        if (curr === null) {
+            return;
         }
+        helper(curr.left);
+        count++;
+        if (count === k) {
+            res = curr.val;
+            return;
+        }
+        helper(curr.right);
     }
-    console.log(arr.sort((a, b) => a - b));
-    return arr.sort((a, b) => a - b)[k - 1];
+    helper(root);
+    return res;
 }
