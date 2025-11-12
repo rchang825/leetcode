@@ -4,43 +4,37 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    // frequency map of numbers and indices array
-    // loop through again and check if addend (target - num) is in map
-        // return indices if so
-    // return []
-    let addends = {};
-    for (var index = 0; index < nums.length; index++) {
-        if (addends.hasOwnProperty(nums[index])) {
-            addends[nums[index]].push(index);
+    /*
+    I: array of integers, target integer
+    O: array of two indices [i, j] where nums[i] + nums[j] = target
+    C: you may not use same element twice
+    E: element appears twice -> return 2 different indices
+    */
+    // make a frequency map of nums that tracks indices
+    let counts = {};
+    for (var n = 0; n < nums.length; n++) {
+        if (counts.hasOwnProperty(nums[n])) {
+            counts[nums[n]].push(n);
         } else {
-            let newArr = [];
-            newArr.push(index);
-            addends[nums[index]] = newArr;
+            counts[nums[n]] = [n];
         }
     }
-    // console.log(addends);
-    let found = [];
-    let i = 0;
-    while (i < nums.length && found.length === 0) {
-        let searching = target - nums[i];
-        // console.log('looking for', searching);
-        if (addends.hasOwnProperty(searching)) {
-            // console.log('found!');
-            if (searching == nums[i]) {
-                if (addends[searching].length > 1) {
-                    found.push(i);
-                    found.push(addends[searching][1]);
-                    // console.log('dupe', found);
-                } 
-            }
-            else {
-                    found.push(i);
-                    found.push(addends[searching][0]);
-                    // console.log('found', found);
+    // console.log(counts);
+    // iterate through nums
+    for (var i = 0; i < nums.length; i++) {
+        // fix the current number and look for a complement
+        let complement = target - nums[i];
+        if (counts.hasOwnProperty(complement)) {
+            // check for edge case
+            if (complement === nums[i]) {
+                if (counts[complement].length >= 2) {
+                   return [counts[complement][0], counts[complement][1]]; 
                 }
-            // console.log(found);
+            } else {
+                return [i, counts[complement][0]];
+            }
         }
-        i++;
+            // return indices if found
     }
-    return found;
+    return [];
 };
