@@ -25,7 +25,6 @@ var serialize = function(root) {
     }
     helper(root);
     // return array JSON stringified (to maintain distinct elements)
-    console.log(JSON.stringify(res));
     return JSON.stringify(res);
 };
 
@@ -37,9 +36,6 @@ var serialize = function(root) {
  */
 var deserialize = function(data) {
     // iterate through string parsed back into array
-    // if (data === '[null]') {
-    //     return null;
-    // }
     data = JSON.parse(data);
     var helper = function() {
         if (data[0] === null) {
