@@ -15,13 +15,9 @@ var twoSum = function(nums, target) {
     for (var n = 0; n < nums.length; n++) {
         let complement = target - nums[n];
         if (counts.hasOwnProperty(complement)) {
-            return [n, counts[complement][0]];
+            return [n, counts[complement]];
         }
-        if (counts.hasOwnProperty(nums[n])) {
-            counts[nums[n]].push(n);
-        } else {
-            counts[nums[n]] = [n];
-        }
+        counts[nums[n]] = n;
     }
     return [];
     // console.log(counts);
