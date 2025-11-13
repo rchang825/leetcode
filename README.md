@@ -128,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/rchang825/leetcode/tree/master/0075-sort-colors) |
 | [0125-valid-palindrome](https://github.com/rchang825/leetcode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/rchang825/leetcode/tree/master/0141-linked-list-cycle) |
+| [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0344-reverse-string](https://github.com/rchang825/leetcode/tree/master/0344-reverse-string) |
 | [0908-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0908-middle-of-the-linked-list) |
 ## Tree
@@ -206,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rchang825/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
+| [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -239,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/rchang825/leetcode/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/rchang825/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0232-implement-queue-using-stacks](https://github.com/rchang825/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/rchang825/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 ## Queue
@@ -300,6 +303,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Quickselect
@@ -361,4 +365,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/rchang825/leetcode/tree/master/0042-trapping-rain-water) |
+## Data Stream
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
 <!---LeetCode Topics End-->
