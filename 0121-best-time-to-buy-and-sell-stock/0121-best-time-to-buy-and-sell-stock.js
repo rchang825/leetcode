@@ -3,14 +3,20 @@
  * @return {number}
  */
 var maxProfit = function(prices) {
-    let max = 0;
-    let min = prices[0];
-    for (var i = 0; i < prices.length; i ++) {
-        if (prices[i] < min) {
-            min = prices[i];
-        } else {
-            max = Math.max(max, prices[i] - min);
-        }
+    // profit defaults to 0
+    if (prices.length === 0) {
+        return 0;
     }
-    return max;
+    let profit = 0;
+    let cheapest = prices[0];
+    for (var i = 0; i < prices.length; i++) {
+        cheapest = Math.min(cheapest, prices[i]);
+        profit = Math.max(profit, (prices[i] - cheapest));
+    }
+    return profit;
 };
+    // for (var i = 0; i < prices.length; i++) {
+    //     for (var j = i; j < prices.length; j++) {
+    //         profit = Math.max(profit, (prices[j] - prices[i]));
+    //     }
+    // }
