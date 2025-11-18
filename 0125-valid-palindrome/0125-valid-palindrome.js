@@ -15,7 +15,7 @@ var isPalindrome = function(s) {
         while (left < right && !isValidChar(s[right])) {
             right--;
         }
-        if ((s[left] + '').toLowerCase() !== (s[right] + '').toLowerCase()) {
+        if (s[left].toLowerCase() !== s[right].toLowerCase()) {
             return false;
         }
         left++;
