@@ -12,9 +12,6 @@ var isPalindrome = function(s) {
             strArr.push(ch);
         }
     }
-    // console.log(strArr.join(''));
-    let mid = Math.floor(strArr.length / 2);
-    // console.log(strArr.slice(0, mid + 1).join(''));
-    // console.log(strArr.slice(mid).reverse().join(''));
+    // palindromes are the same forwards and backwards
     return strArr.slice().join('') === strArr.slice().reverse().join('');
 };
