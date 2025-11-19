@@ -4,9 +4,5 @@
  * @return {number}
  */
 var findFinalValue = function(nums, original) {
-    nums = new Set(nums);
-    while (nums.has(original)) {
-        original *= 2;
-    }
-    return original;
+    return nums.includes(original) ? findFinalValue(nums, original * 2) : original;
 };
