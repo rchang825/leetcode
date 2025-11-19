@@ -4,8 +4,8 @@
  * @return {number}
  */
 var findFinalValue = function(nums, original) {
-    nums.sort();
-    while (nums.includes(original)) {
+    nums = new Set(nums);
+    while (nums.has(original)) {
         original *= 2;
     }
     return original;
