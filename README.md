@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1036-rotting-oranges](https://github.com/rchang825/leetcode/tree/master/1036-rotting-oranges) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
+| [1580-shuffle-the-array](https://github.com/rchang825/leetcode/tree/master/1580-shuffle-the-array) |
 | [2058-concatenation-of-array](https://github.com/rchang825/leetcode/tree/master/2058-concatenation-of-array) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [3000-minimum-absolute-difference-between-elements-with-constraint](https://github.com/rchang825/leetcode/tree/master/3000-minimum-absolute-difference-between-elements-with-constraint) |
