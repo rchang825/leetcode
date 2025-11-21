@@ -4,43 +4,24 @@
  * @return {number}
  */
 var search = function(nums, target) {
-    // given sorted array
-    // startIndex = 0
-    // endIndex = nums.length - 1
-    // call helper function with startIndex and endIndex
-    return findIndexSearch(nums, target, 0, nums.length - 1);
+    let left = 0;
+    let right = nums.length;
+    // while target not found and the range to search is valid
+    while (left <= right) {
+        // find middle number
+        let mid = Math.floor((right - left) / 2) + left;
+        // if target matches middle, return middle index (found!)
+        if (nums[mid] === target) {
+            return mid;
+        }
+        // if target > middle, move right (close left range)
+        if (nums[mid] < target) {
+            left = mid + 1;
+        } else {
+            // if target < middle, move left (close right range)
+            right = mid - 1;
+        }
+    }
+    // return -1
+    return -1;
 };
-var findIndexSearch = function(nums, target, startIndex, endIndex) {
-    // base case: start and end are <= 1 apart
-    // console.log('start', startIndex, 'end', endIndex);
-    if (target === nums[startIndex]) {
-        return startIndex;
-    }
-    if (target === nums[endIndex]) {
-        return endIndex;
-    }
-    if (endIndex - startIndex <= 1) {
-        // not found, return -1
-        return -1;
-    }
-    // calculate middle
-    let midIndex = Math.floor((endIndex - startIndex)/2) + startIndex;
-    // console.log('mid', midIndex);
-    // if target = val at middle
-    if (target === nums[midIndex]) {
-        // return middle
-        // console.log('target found');
-        return midIndex;
-    }
-    // if target < val at middle
-    if (target < nums[midIndex]) {
-        // recurse on left section
-        // console.log('target < ' + nums[midIndex] + ', going left');
-        return findIndexSearch(nums, target, startIndex, midIndex);
-    } else {
-    // else
-        // recurse on right section
-        // console.log('target > ' + nums[midIndex] + ', going right');
-        return findIndexSearch(nums, target, midIndex, endIndex);
-    }
-}
