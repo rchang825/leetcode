@@ -11,7 +11,7 @@ var countPalindromicSubsequence = function(s) {
             map[s[i]] = [i];
         }
     }
-    var helper = function(start, end) {
+    var helper2 = function(start, end) {
         start++;
         let map = {};
         while (start < end) {
@@ -22,7 +22,7 @@ var countPalindromicSubsequence = function(s) {
         }
         return Object.keys(map).length;
     }
-    var helper2 = function(start, end) {
+    var helper = function(start, end) {
         let uniqueCh = new Array(26).fill(0);
         let aCode = 'a'.charCodeAt(0);
         let count = 0;
