@@ -4,40 +4,25 @@
  * @return {boolean}
  */
 var isAnagram = function(s, t) {
-  // must contain same amount of letters
-  if (s.length !== t.length) {
-    return false;
-  }
-  // frequency map of s
-  let sCounts = {};
-  for (var i = 0; i < s.length; i++) {
-    let ch = s.charAt(i);
-    if (sCounts.hasOwnProperty(ch)) {
-        sCounts[ch] = sCounts[ch] + 1;
-    } else {
-        sCounts[ch] = 1;
+    // frequency map of s and match it to t
+    let map = {};
+    for (var i = 0; i < s.length; i++) {
+        if (map.hasOwnProperty(s[i])) {
+            map[s[i]]++;
+        } else {
+            map[s[i]] = 1;
+        }
     }
-  }
-//   console.log(sCounts);
-  // iterate through t and check against map
-  let j = 0;
-  while (j < t.length) {
-    let ch = t.charAt(j);
-    if (!sCounts.hasOwnProperty(ch)) {
-        return false;
+    for (var j = 0; j < t.length; j++) {
+        if (map.hasOwnProperty(t[j])) {
+            if (map[t[j]] === 1) {
+                delete map[t[j]];
+            } else {
+                map[t[j]]--;
+            }
+        } else {
+            return false;
+        }
     }
-    sCounts[ch] = sCounts[ch] - 1;
-    // if count goes down to 0, remove from map
-    if (sCounts[ch] === 0) {
-        delete sCounts[ch];
-    }
-    j++;
-  }
-  // if map is empty,
-  if (Object.keys(sCounts).length === 0) {
-    // return true
-    return true;
-  }
-  // return false
-  return false;
+    return Object.keys(map).length === 0;
 };
