@@ -18,9 +18,7 @@ var floodFill = function(image, sr, sc, color) {
             helper(r + 1, c, currColor);
             helper(r, c - 1, currColor);
             helper(r, c + 1, currColor);
-        } else {
-            return;
-        }
+        } 
     }
     if (image[sr][sc] !== color) {
         helper(sr, sc, image[sr][sc]);
