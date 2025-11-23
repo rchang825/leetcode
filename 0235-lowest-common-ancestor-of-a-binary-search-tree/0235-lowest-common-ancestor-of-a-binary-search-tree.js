@@ -14,7 +14,8 @@
  */
 var lowestCommonAncestor = function(root, p, q) {
     // returns if p or q doesn't exist within subtree
-    if (root === null) {
+    // or tree starts off null
+    if (!root) {
         return null;
     }
     // edge case: a node can be a descendant of itself
@@ -23,11 +24,9 @@ var lowestCommonAncestor = function(root, p, q) {
     }
     // recurse based on binary search criteria
     if (root.val > q.val && root.val > p.val) {
-        // console.log('looking in left subtree');
         return lowestCommonAncestor(root.left, p, q);
     } 
     if (root.val < p.val && root.val < q.val) {
-        // console.log('looking in right subtree');
         return lowestCommonAncestor(root.right, p, q);
     }
     return root;
