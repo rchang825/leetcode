@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/rchang825/leetcode/tree/master/0733-flood-fill) |
 | [0792-binary-search](https://github.com/rchang825/leetcode/tree/master/0792-binary-search) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/rchang825/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1036-rotting-oranges](https://github.com/rchang825/leetcode/tree/master/1036-rotting-oranges) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1580-shuffle-the-array](https://github.com/rchang825/leetcode/tree/master/1580-shuffle-the-array) |
@@ -315,6 +316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
+| [1018-binary-prefix-divisible-by-5](https://github.com/rchang825/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/rchang825/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Simulation
