@@ -11,24 +11,28 @@
  * @return {boolean}
  */
 var isBalanced = function(root) {
-    // what would make a binary tree unbalanced? if height of subtrees is > 1 level difference
-    // find height of left subtree and height of right subtree:
-        // recurse on left and right subtrees, adding 1 on each recursion and returning 0 when at end of tree
-    // if difference > 1, return false
-    if (root === null) {
+    // height()   
+    var height = function(curr) {
+        if (!curr) {
+            return 0;
+        }
+        // add 1 and recurse while children exist
+        return Math.max(1 + height(curr.left), 1 + height(curr.right));
+    }
+    // edge case: empty node is balanced
+    if (!root) {
         return true;
     }
-    // console.log('height of left tree:', height(root.left));
-    // console.log('height of right tree:', height(root.right));
+    // get height of left tree and height of right tree
+    // cannot differ by more than 1
     if (Math.abs(height(root.left) - height(root.right)) > 1) {
         return false;
     }
-    // return true;
-    return isBalanced(root.left) && isBalanced(root.right);
-};
-var height = function(root) {
-    if (root === null) {
-        return 0;
+    // every subtree must also be balanced
+    // if root has left or root has right child
+    if (root.left || root.right) {
+        // call isBalanced to check left and right child
+        return isBalanced(root.left) && isBalanced(root.right)
     }
-    return Math.max(1 + height(root.left), 1 + height(root.right));
-}
+    return true;
+};
