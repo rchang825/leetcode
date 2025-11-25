@@ -29,10 +29,6 @@ var isBalanced = function(root) {
         return false;
     }
     // every subtree must also be balanced
-    // if root has left or root has right child
-    if (root.left || root.right) {
-        // call isBalanced to check left and right child
-        return isBalanced(root.left) && isBalanced(root.right)
-    }
-    return true;
+    // call isBalanced to check left and right child
+    return isBalanced(root.left) && isBalanced(root.right)
 };
