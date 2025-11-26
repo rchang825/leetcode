@@ -19,7 +19,7 @@ var hasCycle = function(head) {
     let slow = head;
     let fast = head;
     // move pointers
-    while (slow && fast) {
+    while (fast) {
         slow = slow.next;
         fast = fast.next;
         if (fast) {
