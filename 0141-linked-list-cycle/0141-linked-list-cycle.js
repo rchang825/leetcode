@@ -11,25 +11,29 @@
  * @return {boolean}
  */
 var hasCycle = function(head) {
-    // edge case: only one or no nodes in list -> return false
-    if (!head || !head.next) {
+    // edge case: empty list
+    if (!head) {
         return false;
     }
-    // slow and fast pointers!
-    let slow = head.next;
-    let fast = head.next.next;
-    // make fast look two nodes ahead
-    // if they ever match, that means there is a cycle (otherwise fast will reach end of list first)
-    while (slow !== fast && slow && fast) {
+    // fast and slow pointer
+    let slow = head;
+    let fast = head.next;
+    // move pointers
+    while (slow && fast) {
         slow = slow.next;
-        if (fast.next) {
-            fast = fast.next.next;
+        fast = fast.next;
+        if (fast) {
+            fast = fast.next;
         } else {
-            return false; // list has odd number of nodes
+            return false;
         }
+        // if they meet, there is a cycle
+        if (slow === fast) {
+            // return true
+            return true;
+        }
+            
     }
-    if (slow === fast) {
-        return true;
-    }
+    // otherwise, return false
     return false;
 };
