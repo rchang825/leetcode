@@ -14,7 +14,7 @@ var numberOfPaths = function(grid, k) {
     // helper(row, col, remainder)
     var helper = function(r, c, rem) {
         // base case: row or col out of bounds
-        if (r < 0 || r >= M || c < 0 || c >= N) {
+        if (r >= M || c >= N) {
             // return 0
             return 0;
         }
