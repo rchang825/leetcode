@@ -17,7 +17,7 @@ var hasCycle = function(head) {
     }
     // fast and slow pointer
     let slow = head;
-    let fast = head.next;
+    let fast = head;
     // move pointers
     while (slow && fast) {
         slow = slow.next;
