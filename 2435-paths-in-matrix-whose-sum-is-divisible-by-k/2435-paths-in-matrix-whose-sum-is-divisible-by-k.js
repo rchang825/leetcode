@@ -9,7 +9,7 @@ var numberOfPaths = function(grid, k) {
     let N = grid[0].length;
     let MOD = 10 ** 9 + 7;
     // define memo array
-    let memo = new Array(M + 1).fill().map(el => new Array(N + 1).fill().map(elem => new Array(k).fill(0)));
+    let memo = new Array(M + 1).fill().map(el => new Array(N + 1).fill().map(elem => new Array(k).fill(-1)));
 
     // helper(row, col, remainder)
     var helper = function(r, c, rem) {
@@ -24,7 +24,7 @@ var numberOfPaths = function(grid, k) {
             return (rem + grid[r][c]) % k === 0 ? 1 : 0;
         }
         // return memoized result if applicable
-        if (memo[r][c][rem] !== 0) {
+        if (memo[r][c][rem] !== -1) {
             return memo[r][c][rem];
         }
         // recurse on down
