@@ -10,29 +10,23 @@ MyQueue.prototype.makeRead = function() {
         this.read.push(this.write.pop());
     }
 }
-MyQueue.prototype.makeWrite = function() {
-    // pop everything from read to write
-    while (this.read.length !== 0) {
-        this.write.push(this.read.pop());
-    }
-}
 /** 
  * @param {number} x
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
-    // call helper to make write
-    this.makeWrite();
     // add to end of write stack
     this.write.push(x);
-    // call helper to make read
-    this.makeRead();
 };
 
 /**
  * @return {number}
  */
 MyQueue.prototype.pop = function() {
+    // call helper to make read if read is empty
+    if (this.read.length === 0) {
+       this.makeRead(); 
+    }
     // dequeue from read
     return this.read.pop();
 };
@@ -41,6 +35,10 @@ MyQueue.prototype.pop = function() {
  * @return {number}
  */
 MyQueue.prototype.peek = function() {
+    // call helper to make read if read is empty
+    if (this.read.length === 0) {
+        this.makeRead();
+    }
     // peek from read
     return this.read[this.read.length - 1];
 };
@@ -50,7 +48,7 @@ MyQueue.prototype.peek = function() {
  */
 MyQueue.prototype.empty = function() {
     // return true if both stacks are empty
-    return this.read.length === 0;
+    return this.read.length === 0 && this.write.length === 0;
 };
 
 /** 
