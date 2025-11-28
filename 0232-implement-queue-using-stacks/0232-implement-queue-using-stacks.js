@@ -50,7 +50,7 @@ MyQueue.prototype.peek = function() {
  */
 MyQueue.prototype.empty = function() {
     // return true if both stacks are empty
-    return this.read.length === 0 && this.write.length === 0;
+    return this.read.length === 0;
 };
 
 /** 
