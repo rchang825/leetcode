@@ -1,47 +1,58 @@
-// use two stacks that swap their elements
-// push: 
-    // pop and push all elements in stack1 to stack 2 (starts empty)
-    // push element to stack2 
-    // pop and push all elements from stack2 back to stack1
-// pop: pop from stack1
-var MyQueue = function() {
-    this.active = [];
-    this.helper = [];
-};
 
+var MyQueue = function() {
+    // initialize the stack(s) data structure
+    this.read = [];
+    this.write = [];
+};
+MyQueue.prototype.makeRead = function() {
+    // pop everything from write to read
+    while (this.write.length !== 0) {
+        this.read.push(this.write.pop());
+    }
+}
+MyQueue.prototype.makeWrite = function() {
+    // pop everything from read to write
+    while (this.read.length !== 0) {
+        this.write.push(this.read.pop());
+    }
+}
 /** 
  * @param {number} x
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
-    while (this.active.length !== 0) {
-        this.helper.push(this.active.pop());
-    }
-    this.helper.push(x);
-    while (this.helper.length !== 0) {
-        this.active.push(this.helper.pop());
-    }
+    // call helper to make write
+    this.makeWrite();
+    // add to end of write stack
+    this.write.push(x);
 };
 
 /**
  * @return {number}
  */
 MyQueue.prototype.pop = function() {
-    return this.active.pop();
+    // call helper to make read
+    this.makeRead();
+    // dequeue from read
+    return this.read.pop();
 };
 
 /**
  * @return {number}
  */
 MyQueue.prototype.peek = function() {
-    return this.active[this.active.length - 1];
+    // call helper to make read
+    this.makeRead();
+    // peek from read
+    return this.read[this.read.length - 1];
 };
 
 /**
  * @return {boolean}
  */
 MyQueue.prototype.empty = function() {
-    return this.active.length === 0;
+    // return true if both stacks are empty
+    return this.read.length === 0 && this.write.length === 0;
 };
 
 /** 
