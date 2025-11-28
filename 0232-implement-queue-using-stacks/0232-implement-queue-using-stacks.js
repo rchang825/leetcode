@@ -3,6 +3,8 @@ var MyQueue = function() {
     // initialize the stack(s) data structure
     this.read = [];
     this.write = [];
+    // peek variable
+    this.top;
 };
 MyQueue.prototype.makeRead = function() {
     // pop everything from write to read
@@ -15,6 +17,10 @@ MyQueue.prototype.makeRead = function() {
  * @return {void}
  */
 MyQueue.prototype.push = function(x) {
+    // update peek if stacks are empty
+    if (this.write.length === 0) {
+        this.top = x;
+    }
     // add to end of write stack
     this.write.push(x);
 };
@@ -35,11 +41,11 @@ MyQueue.prototype.pop = function() {
  * @return {number}
  */
 MyQueue.prototype.peek = function() {
-    // call helper to make read if read is empty
+    // return peek (from write) if read is empty
     if (this.read.length === 0) {
-        this.makeRead();
+        return this.top;
     }
-    // peek from read
+    // peek from read if it isn't empty
     return this.read[this.read.length - 1];
 };
 
