@@ -25,14 +25,14 @@ MyQueue.prototype.push = function(x) {
     this.makeWrite();
     // add to end of write stack
     this.write.push(x);
+    // call helper to make read
+    this.makeRead();
 };
 
 /**
  * @return {number}
  */
 MyQueue.prototype.pop = function() {
-    // call helper to make read
-    this.makeRead();
     // dequeue from read
     return this.read.pop();
 };
@@ -41,8 +41,6 @@ MyQueue.prototype.pop = function() {
  * @return {number}
  */
 MyQueue.prototype.peek = function() {
-    // call helper to make read
-    this.makeRead();
     // peek from read
     return this.read[this.read.length - 1];
 };
