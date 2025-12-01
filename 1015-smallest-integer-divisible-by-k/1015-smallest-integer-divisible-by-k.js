@@ -25,6 +25,7 @@ var smallestRepunitDivByK = function(k) {
         // add next multiple of 10 to curr
         curr *= 10;
         curr++;
+        // curr %= k to avoid overflow
         curr %= k;
         // increment length
         length++;
