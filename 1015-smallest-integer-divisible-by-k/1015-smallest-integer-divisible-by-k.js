@@ -19,9 +19,9 @@ var smallestRepunitDivByK = function(k) {
     // worst case is length = k
     while (curr !== 0) {
         // console.log(curr);
-        if (length === k) {
-            return curr % k === 0 ? length : -1;
-        }
+        // if (length === k) {
+        //     return curr % k === 0 ? length : -1;
+        // }
         // add next multiple of 10 to curr
         curr *= 10;
         curr++;
