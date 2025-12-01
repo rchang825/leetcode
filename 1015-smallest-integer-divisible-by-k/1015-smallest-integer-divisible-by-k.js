@@ -18,7 +18,7 @@ var smallestRepunitDivByK = function(k) {
     // while curr !== 0 (not divisible)
     // worst case is length = k
     while (curr !== 0) {
-        console.log(curr);
+        // console.log(curr);
         if (length === k) {
             return curr % k === 0 ? length : -1;
         }
