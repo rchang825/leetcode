@@ -17,36 +17,40 @@ var solution = function(isBadVersion) {
      * @param {integer} n Total versions
      * @return {integer} The first bad version
      */
-     // 1 2 3 4 5
-     // 3: good
-     // 4: bad && 4 - 1: good therefore return 4
-     // 
     return function(n) {
-        var search = function(start, end) {
-            if (start === end) {
-                return start;
+        // minimize calls = binary search
+        // define left and right based on n
+        let left = 0;
+        let right = n;
+        // while left < right
+        while (left < right) {
+            // calculate middle index using left and right
+            // console.log('left', left, 'right', right);
+            let mid = Math.floor((right - left)/2) + left;
+            // console.log('mid', mid);
+            let isBadMid = isBadVersion(mid);
+            // if middle is bad, 
+            if (isBadMid) {
+                // check if left is good
+                if (mid === 0 || !isBadVersion(mid - 1)) {
+                    // return middle
+                    return mid;
+                } 
+                // otherwise, right = middle - 1
+                right = mid - 1;
+            } else {
+            // if middle is good
+                // check if right is bad
+                if (isBadVersion(mid + 1)) {
+                    // return right
+                    return mid + 1;
+                }
+                // otherwise, left = middle + 1
+                left = mid + 1;
             }
-            // binary search: find middle
-            let mid = Math.floor((end - start) / 2) + start;
-            let isBad = isBadVersion(mid);
-            // console.log('start', start, 'end', end);
-            // console.log('isBadVersion at', mid, ':', isBad);
-            // if bad, go left
-            if (isBad) {
-                return search(start, mid);
-            }
-            // if good, go right
-            if (!isBad) {
-                return search(mid+1, end);
-            }
-            return -1;
-        };
-        if (n === 1) {
-            if (isBadVersion(n)) {
-                return n;
-            }
-            return -1;
         }
-        return search(1, n);
+        // bad definitely exists in n
+        // this case should never happen
+        return -1;
     };
 };
