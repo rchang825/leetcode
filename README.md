@@ -326,12 +326,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/rchang825/leetcode/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rchang825/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
+| [0190-reverse-bits](https://github.com/rchang825/leetcode/tree/master/0190-reverse-bits) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
+| [0190-reverse-bits](https://github.com/rchang825/leetcode/tree/master/0190-reverse-bits) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/rchang825/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/rchang825/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
