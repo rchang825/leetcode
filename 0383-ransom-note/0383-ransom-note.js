@@ -4,32 +4,34 @@
  * @return {boolean}
  */
 var canConstruct = function(ransomNote, magazine) {
-    if (magazine.length < ransomNote.length) {
-        return false;
-    }
-    // frequency map by iterating through magazine letters
-    let letters = {};
-    for (var i = 0; i < magazine.length; i++) {
-        if (letters.hasOwnProperty([magazine.charAt(i)])) {
-            letters[magazine.charAt(i)] = letters[magazine.charAt(i)] + 1;
+    // build frequency map of letters in ransomNote
+    let counts = {};
+    for (var i = 0; i < ransomNote.length; i++) {
+        if (counts.hasOwnProperty(ransomNote[i])) {
+            counts[ransomNote[i]]++;
         } else {
-            letters[magazine.charAt(i)] = 1;
+            counts[ransomNote[i]] = 1;
         }
     }
-    // console.log(letters);
-    // iterate through ransomNote
-    let letterIndex = 0;
-    while (letterIndex < ransomNote.length) {
-        let l = ransomNote.charAt(letterIndex);
-        // decrement count
-        if (letters.hasOwnProperty(l) && (letters[l] > 0)) {
-            letters[l] = letters[l] - 1;
-            letterIndex++;
-        } else {
-            // return false if letter not in map
-            return false;
+    // iterate through magazine (not with a for loop)
+    let l = 0;
+    while (l < magazine.length) {
+        // if the letter is used in map
+        if (counts.hasOwnProperty(magazine[l])) {
+            // decrement or delete letter from map
+            if (counts[magazine[l]] === 1) {
+                delete counts[magazine[l]];
+            } else {
+                counts[magazine[l]]--;
+            }
         }
+        // if no more letters in map
+        if (Object.keys(counts).length === 0) {
+            // return true
+            return true;
+        }
+        l++;
     }
-    // return true
-    return true;
+    // return false
+    return false;
 };
