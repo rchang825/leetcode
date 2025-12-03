@@ -5,42 +5,6 @@
  */
 var canConstruct = function(ransomNote, magazine) {
     // build frequency map of letters in ransomNote
-    // can use an array of size 26 because all letters are lowercase
-    let counts = new Array(26);
-    let aChar = 'a'.charCodeAt(0);
-    for (var i = 0; i < ransomNote.length; i++) {
-        let code = ransomNote.charCodeAt(i) - aChar;
-        if (counts[code]) {
-            counts[code]++;
-        } else {
-            counts[code] = 1;
-        }
-    }
-    // define a length variable that = ransomNote.length
-    let length = ransomNote.length;
-    // iterate through magazine
-    let l = 0;
-    while (l < magazine.length) {
-        // if ransomNote uses a letter in magazine
-        let currCode = magazine.charCodeAt(l) - aChar;
-        if (counts[currCode]) {
-            // decrement it
-            counts[currCode]--;
-            // decrement length
-            length--;
-        }
-        // if length is ever 0
-        if (length === 0) {
-            // return true early
-            return true;
-        }
-        l++;
-    }
-    // return false otherwise
-    return false;
-}
-var canConstruct1 = function(ransomNote, magazine) {
-    // build frequency map of letters in ransomNote
     let counts = {};
     for (var i = 0; i < ransomNote.length; i++) {
         if (counts.hasOwnProperty(ransomNote[i])) {
@@ -49,6 +13,8 @@ var canConstruct1 = function(ransomNote, magazine) {
             counts[ransomNote[i]] = 1;
         }
     }
+    // keep track of number of letters left to look for
+    let length = ransomNote.length;
     // iterate through magazine (not with a for loop)
     let l = 0;
     while (l < magazine.length) {
@@ -60,9 +26,10 @@ var canConstruct1 = function(ransomNote, magazine) {
             } else {
                 counts[magazine[l]]--;
             }
+            length--;
         }
         // if no more letters in map
-        if (Object.keys(counts).length === 0) {
+        if (length === 0) {
             // return true
             return true;
         }
