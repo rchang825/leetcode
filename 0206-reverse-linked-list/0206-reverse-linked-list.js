@@ -10,24 +10,28 @@
  * @return {ListNode}
  */
 var reverseList = function(head) {
+    // handle empty list
     if (!head) {
         return head;
     }
-    // three pointers: prev = null, curr, and next
+    // initialize prev, curr, and temp
     let prev = null;
     let curr = head;
-    let next = curr.next;
-    // console.log('curr', curr);
-    // iterate through until next is null
-    while (next !== null) {
+    let temp = curr;
+
+    // iterate through linked list
+    while (curr !== null) {
+        // maintain place in original list
+        temp = temp.next;
+        // reverse curr and prev
         curr.next = prev;
+        // update prev and curr for next iteration
         prev = curr;
-        // console.log(prev);
-        curr = next;
-        next = next.next;
+        curr = temp;
     }
-    // link last node to rest of reversed list
-    curr.next = prev;
-    // return curr
-    return curr;
+    // at this point, curr and temp are null
+    // prev will be the last node of original list
+    // aka the head of the reversed list
+    // return prev
+    return prev;
 };
