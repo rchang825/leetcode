@@ -10,22 +10,21 @@ var longestPalindrome = function(s) {
     const map = {};
     // frequency map of letters in s (case-sensitive)
     for (var i = 0; i < s.length; i++) {
-        // if a letter has an even frequency or = 2
         if (map.hasOwnProperty(s[i])) {
-            if (map[s[i]] === 1) {
+            // increment frequency
+            map[s[i]]++;
+            // if a letter has an even frequency or = 2
+            if (map[s[i]] % 2 === 0) {
                 // increment length by 2
                 length += 2;
-                // reset to 0
-                map[s[i]] = 0;
-            } else {
-                map[s[i]]++;
-            }
+            } 
         } else {
+            // add character to map with initial count of 1
             map[s[i]] = 1;
         }
     }
     // check for at most one extra letter
-    // s.length - length = number of single instance letters
+    // s.length - length = number of odd letters leftover
     // if this > 1
     if (s.length - length >= 1) {
         // increment length
