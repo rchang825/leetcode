@@ -21,7 +21,7 @@ var reverseList = function(head) {
 
     // iterate through linked list
     while (curr !== null) {
-        // maintain place in original list
+        // maintain next iterable place in original list
         temp = temp.next;
         // reverse curr and prev
         curr.next = prev;
