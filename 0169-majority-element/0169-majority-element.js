@@ -3,6 +3,12 @@
  * @return {number}
  */
 var majorityElement = function(nums) {
+    // sort nums
+    nums.sort();
+    // middle number will always be majority element
+    return nums[Math.floor(nums.length / 2)];
+}
+var majorityElementMap = function(nums) {
     // define target of more than n / 2
     let target = Math.floor(nums.length / 2) + 1;
     let count = {};
