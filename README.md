@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 ## Stack
 |  |
 | ------- |
@@ -112,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/rchang825/leetcode/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/rchang825/leetcode/tree/master/0224-basic-calculator) |
 | [0232-implement-queue-using-stacks](https://github.com/rchang825/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 ## Linked List
 |  |
 | ------- |
@@ -343,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/rchang825/leetcode/tree/master/0054-spiral-matrix) |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 | [2058-concatenation-of-array](https://github.com/rchang825/leetcode/tree/master/2058-concatenation-of-array) |
+| [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 ## Geometry
 |  |
