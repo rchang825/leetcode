@@ -4,51 +4,68 @@
  * @return {string}
  */
 var addBinary = function(a, b) {
-    if (a === '0') {
-        return b;
+    // define res which will be array built backwards
+    let res = [];
+    // define a carry = boolean that starts off false
+    let carry = false;
+    // start from the back of a and b
+    // find longer string and set it to b
+    if (a.length > b.length) {
+        let temp = a;
+        a = b;
+        b = temp;
     }
-    if (b === '0') {
-        return a;
-    }
-    // naive approach: convert binary to dec, add, then convert dec to binary
-    // will exceed integer constraints
-    // two pointers looking backwards
-    // carry if sum = 2
-    let aPointer = a.length - 1;
-    let bPointer = b.length - 1;
-    let carry = 0;
-    let sum = [];
-    while (aPointer >= 0 || bPointer >= 0) {
-        let aCurr = aPointer >= 0 ? a.charAt(aPointer) : '0';
-        let bCurr = bPointer >= 0 ? b.charAt(bPointer) : '0';
-        if (aCurr === '1' && bCurr === '1') {
-            if (carry === 0) {
-                carry = 1;
-                sum.push('0');
+    // console.log('checking', a, 'against', b);
+    // iterate until the end of the longer string (b)
+    for (var i = b.length - 1, j = a.length - 1; i >= 0; i--, j--) {
+        // if shorter string doesn't have bit, use 0
+        let aBit = j < 0 ? 0 : Number(a[j]);
+        let bBit = Number(b[i]);
+        // if 1 + 1
+        // console.log('adding', aBit, '+', bBit, 'with carry of', carry ? 1 : 0);
+        if (aBit && bBit) {
+            // if carry is true
+            if (carry) {
+                // push 1
+                res.push(1);
+            // otherwise 
             } else {
-                sum.push('1');
+                // set carry to true
+                carry = true;
+                // push 0
+                res.push(0);
             }
-
-        } else if (aCurr === '0' && bCurr === '0') {
-            if (carry === 0) {
-                sum.push('0');
+        // if 1 + 0 or 0 + 1
+        } else if (aBit ^ bBit) {
+            // if carry is true
+            if (carry) {
+                // push 0
+                res.push(0);
+            // otherwise
             } else {
-                carry = 0;
-                sum.push('1');
+                // push 1
+                res.push(1);
             }
+        // if 0 + 0
         } else {
-            if (carry === 0) {
-                sum.push('1');
+            // if carry is true
+            if (carry) {
+                // carry is false
+                carry = false;
+                // push 1
+                res.push(1);
+            // otherwise
             } else {
-                sum.push('0');
+                // push 0
+                res.push(0);
             }
         }
-        aPointer--;
-        bPointer--;
     }
-    // remember last carry
-    if (carry === 1) {
-        sum.push('1');
+    // if carry is true
+    if (carry) {
+        // push final 1
+        res.push(1);
     }
-    return sum.reverse().join('');
+    // return res reversed, converted back to string
+    return res.reverse().join('');
 };
