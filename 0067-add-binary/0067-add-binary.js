@@ -4,7 +4,7 @@
  * @return {string}
  */
 var addBinary = function(a, b) {
-    // define res which will be array built backwards
+// define res which will be array built backwards
     let res = [];
     // define a carry = boolean that starts off false
     let carry = false;
@@ -23,7 +23,7 @@ var addBinary = function(a, b) {
         let bBit = Number(b[i]);
         // if 1 + 1
         // console.log('adding', aBit, '+', bBit, 'with carry of', carry ? 1 : 0);
-        if (aBit && bBit) {
+        if (aBit & bBit) {
             // if carry is true
             if (carry) {
                 // push 1
@@ -68,4 +68,4 @@ var addBinary = function(a, b) {
     }
     // return res reversed, converted back to string
     return res.reverse().join('');
-};
+}
