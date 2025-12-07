@@ -307,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/rchang825/leetcode/tree/master/0224-basic-calculator) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
+| [1523-count-odd-numbers-in-an-interval-range](https://github.com/rchang825/leetcode/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/rchang825/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/rchang825/leetcode/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
