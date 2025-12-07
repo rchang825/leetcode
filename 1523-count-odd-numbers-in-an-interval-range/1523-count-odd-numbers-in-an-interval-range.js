@@ -4,6 +4,21 @@
  * @return {number}
  */
 var countOdds = function(low, high) {
+    // bound low and high to their nearest odd numbers
+    if (low % 2 === 0) {
+        low++;
+    }
+    if (high % 2 === 0) {
+        high--;
+    }
+    // edge case: bounds are invalid
+    if (high >= low) {
+       return Math.floor(high - low) / 2 + 1; 
+    } 
+    return 0;
+    
+}
+var countOdds1 = function(low, high) {
     // 3, 4, 5, 6, 7, 8
     // define res
     let totalNums = high - low + 1;
