@@ -4,16 +4,13 @@
  * @return {number}
  */
 var countOdds = function(low, high) {
-    // bound low and high to their nearest odd numbers
+    // bound low to their nearest odd numbers
     if (low % 2 === 0) {
         low++;
     }
-    if (high % 2 === 0) {
-        high--;
-    }
     // edge case: bounds are invalid
     if (high >= low) {
-       return Math.floor(high - low) / 2 + 1; 
+       return Math.floor((high - low) / 2) + 1; 
     } 
     return 0;
     
