@@ -4,7 +4,7 @@
  * @return {number}
  */
 var countOdds = function(low, high) {
-    // bound low to their nearest odd numbers
+    // bound low to the nearest odd number
     if (low % 2 === 0) {
         low++;
     }
