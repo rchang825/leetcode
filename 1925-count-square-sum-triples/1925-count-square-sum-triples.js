@@ -9,7 +9,7 @@ var countTriples = function(n) {
     for (var i = 1; i <= n; i++) {
         // fix first num a -> get square
         let triple = i * i;
-        // from 1 to  n - 1
+        // from 1 to  n
         for (var j = 1; j <= n; j++) {
             // fix b -> get square
             let sq = j * j;
