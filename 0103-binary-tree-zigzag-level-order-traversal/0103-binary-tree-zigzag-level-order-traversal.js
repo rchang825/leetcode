@@ -40,33 +40,22 @@ var zigzagLevelOrder = function(root) {
         for (var i = 0; i < size; i++) {
             // dequeue (array.shift())
             let curr = queue.shift();
-            // console.log('at curr', curr);
-            // console.log(startLeft ? 'going from left to right' : 'going from right to left');
-            // if curr exists 
-            if (curr) {
-                // visit node by pushing its val to the current level array
+            // if (curr) {
                 currLevel.push(curr.val);
-                // add children if they exist
                 if (curr.left) {
                     queue.push(curr.left);
                 }
                 if (curr.right) {
                     queue.push(curr.right);
                 }   
-            }
+            // }
         }
-        // level complete,
-        // reverse currLevel if starting from right
         if (!startLeft) {
             currLevel = currLevel.reverse();
         }
-        // console.log('level complete', currLevel);
         res.push(currLevel.slice());
-        // start a new level
         currLevel = [];
-        // reverse direction
         startLeft = !startLeft;
     }
-    // return res array
     return res;
 };
