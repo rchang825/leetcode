@@ -11,20 +11,27 @@
  * @return {number}
  */
 var diameterOfBinaryTree = function(root) {
-    // diameter = height of left tree + height of right tree
-    // DOES NOT HAVE TO GO THROUGH ROOT -> check diameters of subtrees
+    // diameter = height of left subtree + height of right subtree
+    // initialize a max diameter variable
     let diameter = 0;
-
-    var findDiameter = function(root) {
-        if (root === null) {
+    // helper(curr) calculates height and updates max diameter seen
+    var helper = function(curr) {
+        // if curr is null
+        if (!curr) {
+            // return 0
             return 0;
         }
-        let left = findDiameter(root.left);
-        let right = findDiameter(root.right);
-        diameter = Math.max(diameter, left + right);
-        return 1 + Math.max(left, right);
+        // find height (1 + max of (helper(left) + helper(right)))
+        let lHeight = helper(curr.left);
+        let rHeight = helper(curr.right);
+        // update diameter if applicable
+        diameter = Math.max(diameter, lHeight + rHeight);
+        // return height 
+        return 1 + Math.max(lHeight, rHeight);
     };
 
-    findDiameter(root);
+    // call helper starting with root
+    helper(root)
+    // return diameter
     return diameter;
 };
