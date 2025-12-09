@@ -3,17 +3,18 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    // incomplete frequency map
-    // return true as soon as frequency = 2 at any point
-    let counts = {};
-    let i = 0;
-    while (i < nums.length) {
-        if (counts[nums[i]] === 1) {
+    // frequency map
+    let count = {};
+    // iterate through nums
+    for (var i = 0; i < nums.length; i++) {
+        // if map already contains num
+        if (count.hasOwnProperty(nums[i])) {
+            // return true
             return true;
-        } else {
-            counts[nums[i]] = 1;
         }
-        i++;
+        // add num to map
+        count[nums[i]] = 1;
     }
+    // return false
     return false;
 };
