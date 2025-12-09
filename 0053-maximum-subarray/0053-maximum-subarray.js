@@ -9,24 +9,18 @@ var maxSubArray = function(nums) {
     // edge case: only negative subarrays in nums
     // initialize maxSum with max negative value
     let maxSum = Number.NEGATIVE_INFINITY;
-    let left = 0;
-    let right = 0;
-    // start from first element and sum
-    while (left <= right && right < nums.length) {
+    // consider every single number
+    for (var i = 0; i < nums.length; i++) {
         // update sum
-        sum += nums[right];
+        sum += nums[i];
         // update maxSum
         maxSum = Math.max(maxSum, sum);
         // if sum is negative
         if (sum < 0) {
-            // start over
+            // start over with a new subarray sum
             // sum = 0
             sum = 0;
-            // close left
-            left++;
         } 
-        // open window to right
-        right++;
     }
     // return maxSum
     return maxSum;
