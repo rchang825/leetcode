@@ -23,10 +23,7 @@ var middleNode = function(head) {
         // slow + 1
         slow = slow.next;
         // fast + 2 if possible
-        fast = fast.next;
-        if (fast) {
-            fast = fast.next;
-        }
+        fast = fast.next.next;
     }
     // slow pointer will be the middle node
     return slow;
