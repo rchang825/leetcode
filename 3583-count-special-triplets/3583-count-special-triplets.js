@@ -3,6 +3,46 @@
  * @return {number}
  */
 var specialTriplets = function(nums) {
+    // define mod constant
+    let MOD = 10 ** 9 + 7;
+    // initialize prefix/suffix maps
+    let freqPrev = {};
+    let freqNext = {};
+    // initialize res
+    let res = 0;
+
+    // iterate through nums to complete freqNext
+    nums.forEach((num) => {
+        if (freqNext.hasOwnProperty(num)) {
+            freqNext[num]++;
+        } else {
+            freqNext[num] = 1;
+        }
+    });
+
+    // iterate through all j's
+    nums.forEach(num => {
+        // update freqNext
+        freqNext[num]--;
+
+        // update res with results from freqPrev and freqNext
+        // find i (left of j)
+        let left = freqPrev[num * 2] || 0;
+        // find k (right of j)
+        let right = freqNext[num * 2] || 0;
+        res += left * right % MOD;
+        res %= MOD;
+
+        // update freqPrev
+        if (freqPrev[num]) {
+            freqPrev[num]++;
+        } else {
+            freqPrev[num] = 1;
+        }
+    });
+    return res;
+}
+var specialTriplets1 = function(nums) {
     // define constants
     let MOD = 10 ** 9 + 7;
     // frequency map
