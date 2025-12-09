@@ -148,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/rchang825/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0139-word-break](https://github.com/rchang825/leetcode/tree/master/0139-word-break) |
 | [0322-coin-change](https://github.com/rchang825/leetcode/tree/master/0322-coin-change) |
+| [0338-counting-bits](https://github.com/rchang825/leetcode/tree/master/0338-counting-bits) |
 | [0416-partition-equal-subset-sum](https://github.com/rchang825/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
@@ -347,6 +348,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/rchang825/leetcode/tree/master/0078-subsets) |
 | [0190-reverse-bits](https://github.com/rchang825/leetcode/tree/master/0190-reverse-bits) |
+| [0338-counting-bits](https://github.com/rchang825/leetcode/tree/master/0338-counting-bits) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/rchang825/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/rchang825/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
