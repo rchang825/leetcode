@@ -23,5 +23,12 @@ var countPermutations = function(complexity) {
         return n * factorial(n - 1) % MOD;
     }
 
-    return factorial(n - 1);
+    let res = 1;
+    for (var i = 2; i < n; i++) {
+        res *= i;
+        res %= MOD;
+    }
+
+    // return factorial(n - 1);
+    return res;
 };
