@@ -7,7 +7,7 @@ function minCostClimbingStairs(cost: number[]): number {
     dp[n - 2] = cost[n - 2];
     // from third to last step the min cost is cost of step + min(dp[n - 2], dp[n - 1])
     // console.log(dp);
-    for (var i: number = n - 3; i >= 0; i--) {
+    for (let i: number = n - 3; i >= 0; i--) {
         // console.log('min cost at', i, 'is the minimum of cost of taking one step', dp[i + 1], 'or two steps', dp[i + 2]);
         dp[i] = cost[i] + Math.min(dp[i + 1], dp[i + 2]);
     }
