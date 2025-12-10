@@ -1,6 +1,6 @@
 function minCostClimbingStairs(cost: number[]): number {
-    let n: number = cost.length;
-    let dp: number[] = new Array(n);
+    const n: number = cost.length;
+    const dp: number[] = new Array(n);
     // from last step the min cost to get to top is cost of last step
     dp[n - 1] = cost[n - 1];
     // from second to last step the min cost to get to top is cost of last step
