@@ -14,19 +14,17 @@ var search = function(nums, target) {
         }
         // if mid < right
             // right is sorted
-        let rightSorted = nums[mid] <= nums[right];
         // if left < mid
             // left is sorted
         let leftSorted = nums[left] <= nums[mid];
+        // one half is guaranteed to be sorted (even if array is rotated)
         if (leftSorted) {
             if (nums[left] <= target && target < nums[mid]) {
                 right = mid - 1;
             } else {
                 left = mid + 1;
             }
-            
-        } 
-        if (rightSorted) {
+        } else {
             if (target > nums[mid] && target <= nums[right]) {
                 left = mid + 1;
             } else {
