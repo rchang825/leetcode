@@ -27,12 +27,8 @@ function combinationSum(candidates: number[], target: number): number[][] {
             curr.pop();
         }
     }
-    // call helper starting from each candidate
-    for(let i: number = 0; i < candidates.length; i++) {
-        // console.log('starting with', candidates[i]);
-        // call helper(currSum + candidate, curr + candidate)
-        helper(candidates[i], [candidates[i]], i);
-    }
+    // call helper
+    helper(0, [], 0);
 
     // return res
     return res;
