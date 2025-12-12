@@ -11,15 +11,15 @@ var combinationSum = function(candidates, target) {
         // console.log('currSum', currSum, 'curr', curr);
         if (currSum === target) {
             // console.log('combination found!', curr);
-            res.push(curr.slice());
+            res.push(curr);
         }
         if (currSum > target) {
             return;
         }
         for (var i = index; i < candidates.length; i++) {
-            curr.push(candidates[i]);
-            makeComb(curr, currSum + candidates[i], i);
-            curr.pop();
+            // curr.push(candidates[i]);
+            makeComb([...curr, candidates[i]], currSum + candidates[i], i);
+            // curr.pop();
         }
     }
     for (var i = 0; i < candidates.length; i++) {
