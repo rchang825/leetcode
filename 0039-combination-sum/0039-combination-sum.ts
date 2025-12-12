@@ -8,7 +8,7 @@ function combinationSum(candidates: number[], target: number): number[][] {
         if (currSum === target) {
             // console.log('target reached!');
             // add to res
-            res.push(curr.slice());
+            res.push(curr);
             return;
         }
         // if currSum > target
@@ -27,7 +27,7 @@ function combinationSum(candidates: number[], target: number): number[][] {
     }
     // call helper starting from each candidate
     for(let i: number = 0; i < candidates.length; i++) {
-        console.log('starting with', candidates[i]);
+        // console.log('starting with', candidates[i]);
         // call helper(currSum + candidate, curr + candidate)
         helper(candidates[i], [candidates[i]], i);
     }
