@@ -20,7 +20,7 @@ function combinationSum(candidates: number[], target: number): number[][] {
 
         // for all candidates
         for(let i: number = index; i < candidates.length; i++) {
-            console.log('trying to add', candidates[i], 'to', currSum, '...');
+            // console.log('trying to add', candidates[i], 'to', currSum, '...');
             // call helper(currSum + candidate, curr + candidate)
             curr.push(candidates[i]);
             helper(currSum + candidates[i], curr, i);
