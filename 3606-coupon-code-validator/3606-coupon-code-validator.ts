@@ -1,7 +1,7 @@
 function validateCoupons(code: string[], businessLine: string[], isActive: boolean[]): string[] {
     // identify valid coupons
     // define validCoupons array
-    const validCoupons: string[][] = [];
+    const validCoupons: [string,string][] = [];
     const regex = /^[A-Za-z0-9_]+$/;
     // iterate through coupons with one pointer
     for (let i: number = 0; i < code.length; i++) {
