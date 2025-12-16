@@ -114,6 +114,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
+| [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 | [3606-coupon-code-validator](https://github.com/rchang825/leetcode/tree/master/3606-coupon-code-validator) |
@@ -170,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1025-divisor-game](https://github.com/rchang825/leetcode/tree/master/1025-divisor-game) |
 | [1137-n-th-tribonacci-number](https://github.com/rchang825/leetcode/tree/master/1137-n-th-tribonacci-number) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
+| [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 ## Two Pointers
 |  |
@@ -489,4 +491,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1025-divisor-game](https://github.com/rchang825/leetcode/tree/master/1025-divisor-game) |
+## String Matching
+|  |
+| ------- |
+| [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
 <!---LeetCode Topics End-->
