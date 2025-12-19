@@ -23,9 +23,6 @@ function getLongestSubsequenceTLE(words: string[], groups: number[]): string[] {
 };
 function getLongestSubsequence(words: string[], groups: number[]): string[] {
     // either can add to sequence of prev best or cannot add, = sequence of prev best
-    // dp[0] = e
-    // dp[1] = can add to dp[0]? no, = e
-    // dp[2] = can add to dp[1]? yes, = e-b
     const n = words.length;
     // iterate through all words from 1 - n
     // start res with [words[0]], flag = groups[0]
