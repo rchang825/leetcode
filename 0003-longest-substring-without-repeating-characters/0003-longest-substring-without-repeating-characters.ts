@@ -5,8 +5,8 @@ function lengthOfLongestSubstring(s: string): number {
   let right: number = 0;
   let res = 0;
   let chars = new Set();
-  // while left < right
-  while (left <= right && right < s.length) {
+  // while right is within bounds
+  while (right < s.length) {
     // if invalid
     if (chars.has(s[right])) {
         // remove character at left from map
