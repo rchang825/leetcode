@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [3032-count-numbers-with-unique-digits-ii](https://github.com/rchang825/leetcode/tree/master/3032-count-numbers-with-unique-digits-ii) |
 | [3531-count-covered-buildings](https://github.com/rchang825/leetcode/tree/master/3531-count-covered-buildings) |
 | [3583-count-special-triplets](https://github.com/rchang825/leetcode/tree/master/3583-count-special-triplets) |
 | [3606-coupon-code-validator](https://github.com/rchang825/leetcode/tree/master/3606-coupon-code-validator) |
@@ -177,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
+| [3032-count-numbers-with-unique-digits-ii](https://github.com/rchang825/leetcode/tree/master/3032-count-numbers-with-unique-digits-ii) |
 | [3573-best-time-to-buy-and-sell-stock-v](https://github.com/rchang825/leetcode/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
 ## Two Pointers
 |  |
@@ -350,6 +352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1137-n-th-tribonacci-number](https://github.com/rchang825/leetcode/tree/master/1137-n-th-tribonacci-number) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/rchang825/leetcode/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [1925-count-square-sum-triples](https://github.com/rchang825/leetcode/tree/master/1925-count-square-sum-triples) |
+| [3032-count-numbers-with-unique-digits-ii](https://github.com/rchang825/leetcode/tree/master/3032-count-numbers-with-unique-digits-ii) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/rchang825/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/rchang825/leetcode/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3433-count-mentions-per-user](https://github.com/rchang825/leetcode/tree/master/3433-count-mentions-per-user) |
