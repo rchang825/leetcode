@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2058-concatenation-of-array](https://github.com/rchang825/leetcode/tree/master/2058-concatenation-of-array) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
+| [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
 | [3000-minimum-absolute-difference-between-elements-with-constraint](https://github.com/rchang825/leetcode/tree/master/3000-minimum-absolute-difference-between-elements-with-constraint) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/rchang825/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/rchang825/leetcode/tree/master/3432-count-partitions-with-even-sum-difference) |
@@ -118,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
+| [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
 | [3606-coupon-code-validator](https://github.com/rchang825/leetcode/tree/master/3606-coupon-code-validator) |
 ## Stack
 |  |
@@ -174,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
+| [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
 | [3573-best-time-to-buy-and-sell-stock-v](https://github.com/rchang825/leetcode/tree/master/3573-best-time-to-buy-and-sell-stock-v) |
 ## Two Pointers
 |  |
@@ -368,6 +371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/rchang825/leetcode/tree/master/0055-jump-game) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
+| [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
 ## Divide and Conquer
 |  |
 | ------- |
