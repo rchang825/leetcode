@@ -2,13 +2,10 @@ function threeSum(nums: number[]): number[][] {
     // sort nums
     nums.sort((a, b) => a - b);
     // define res
-    console.log(nums);
     const res: number[][] = [];
     const n: number = nums.length;
     // fix first
     for (let i: number = 0; i < n; i++) {
-        let curr = [nums[i]];
-        let currSum = nums[i];
         // skip duplicates
         if (i > 0 && nums[i] === nums[i - 1]) {
             continue;
