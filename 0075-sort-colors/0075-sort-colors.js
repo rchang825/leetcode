@@ -12,70 +12,33 @@ var sortColors = function(nums) {
     const n = nums.length;
     let left = 0;
     let right = n - 1;
+    // define mid pointer
+    let mid = 0;
     // loop while left and right pointers do not overlap
-    while (left < right) {
+    while (mid <= right) {
         // check if a rule is violated
-        // if nums[left] is 2 or nums[right] is 0
-        if (nums[left] === 2 || nums[right] === 0) {
-            // swap
+        // if nums[mid] is 1
+        if (nums[mid] === 1) {
+            // increment mid pointer
+            mid++;
+        } else if (nums[mid] === 0) {
+        // if nums[mid] is 0
+            // swap left with mid
             let temp = nums[left];
-            nums[left] = nums[right];
-            nums[right] = temp;
-        }
-        // if nums[left] is not a 2
-        if (nums[left] !== 2) {
+            nums[left] = nums[mid];
+            nums[mid] = temp;
             // increment left
             left++;
+            // increment mid
+            mid++;
         } else {
-            // decrement right to initiate different swap next iteration
-            right--;
-        }
-        // if nums[right] is 2
-        if (nums[right] === 2) {
-            // decrement right
-            right--;
-        }
-    }
-    /*
-        [2, 0, 2, 1, 1, 0]
-        [0, 0, 2, 1, 1, 2]
-               ^     ^ 
-        [0, 0, 1, 1, 2, 2]
-                  ^  
-        swap because 2 should go on right and 0 should go on left
-        increment left pointer bc it's not a 2
-        decrement right pointer bc it is a 2
-        no swap bc no "rules" violated
-        increment left
-        swap because 2 should go on right
-        increment left pointer bc it's not a 2
-        decrement right pointer bc it is a 2
-        pointers overlap, stop
-    */
-
-
-
-    while (left < right) {
-        if (nums[left] === 2) {
-            let temp = nums[left];
-            nums[left] = nums[right];
+        // if nums[mid] is 2
+            // swap: mid with right
+            let temp = nums[mid];
+            nums[mid] = nums[right];
             nums[right] = temp;
-        }
-        if (nums[left] !== 2) {
-            left++;
-        } else {
+            // decrement right (we know nums[right] will be a 2)
             right--;
         }
-    }
-    left = 0;
-    right = 0;
-    while (right < n) {
-        if (nums[right] === 0) {
-            let temp = nums[right];
-            nums[right] = nums[left];
-            nums[left] = temp;
-            left++;
-        }
-        right++;
     }
 };
