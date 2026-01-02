@@ -1,4 +1,15 @@
 function repeatedNTimes(nums: number[]): number {
+    // sort nums
+    // either first half or second half will contain element repeated n times
+    nums.sort((a, b) => a - b);
+    const n = nums.length / 2;
+    if (nums[0] === nums[n - 1]) {
+        return nums[0];
+    }
+    return nums[n];
+}
+
+function repeatedNTimesBrute(nums: number[]): number {
     // frequency map
     const counts = {};
     // calculate n
