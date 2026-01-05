@@ -10,19 +10,12 @@ var rob = function(nums) {
         p[2] = p[0] + n[2] (rob) OR p[1] (don't rob)
         p[3] = p[1] + n[2] (rob) OR p[2] (don't rob)
     */
-    // edge cases
-    if (nums.length === 1) {
-        return nums[0];
+    const maxProfit = new Array(nums.length + 1);
+    maxProfit[nums.length] = 0;
+    maxProfit[nums.length - 1] = nums[nums.length - 1];
+
+    for (let i = nums.length - 2; i >= 0; i--) {
+        maxProfit[i] = Math.max(maxProfit[i + 1], nums[i] + maxProfit[i + 2]);
     }
-    if (nums.length === 2) {
-        return Math.max(nums[0], nums[1]);
-    }
-    const maxProfit = new Array(nums.length);
-    maxProfit[0] = nums[0];
-    maxProfit[1] = nums[1];
-    maxProfit[2] = nums[0] + nums[2];
-    for (let i = 3; i < nums.length; i++) {
-        maxProfit[i] = nums[i] + Math.max(maxProfit[i - 2], maxProfit[i - 3]);
-    }
-    return Math.max(...maxProfit);
+    return maxProfit[0];
 };
