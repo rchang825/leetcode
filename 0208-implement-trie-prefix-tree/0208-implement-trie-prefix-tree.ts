@@ -1,18 +1,14 @@
 interface TrieNode {
   isWord: boolean;
-  next: object;
+  next: object; // or array of size 26 for only English lowercase letters
 }
 class Trie {
     private trie: object;
     constructor() {
-        // array or object of lowercase English letters (26) with isWord boolean
         this.trie = {};
     }
 
     insert(word: string): void {
-        // traverse trie to insert word where each parent is the previous letter
-        // flip each letter in word to true if not already true
-        
         if (!this.trie[word[0]]) {
             this.trie[word[0]] = {
                 isWord: word.length === 1 ? true : false,
@@ -29,13 +25,10 @@ class Trie {
             }
             curr = curr.next[word[i]];
         }
-        // isWord of final letter = true
         curr.isWord = true;
     }
 
     search(word: string): boolean {
-        // traverse trie letter by letter to find word
-        // difference in prefix vs full word - flag?
         let curr: TrieNode = this.trie[word[0]];
         if (!curr) {
             return false;
@@ -46,13 +39,10 @@ class Trie {
                 return false;
             }
         }
-        // return false immediately if any letter in word does not exist
         return curr.isWord === true;
     }
 
     startsWith(prefix: string): boolean {
-        // traverse trie letter by letter to find prefix and immediately return true
-        // return false immediately if any letter in word does not exist
         let curr: TrieNode = this.trie[prefix[0]];
         if (!curr) {
             return false;
