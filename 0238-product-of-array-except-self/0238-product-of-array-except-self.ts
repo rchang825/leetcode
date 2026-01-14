@@ -7,21 +7,14 @@ function productExceptSelf(nums: number[]): number[] {
              =  =  =  =
     final: [24,12, 8, 6]
     */
-   // one iteration forwards to get prefix products
-   // another iteration backwards to get suffix products 
-   // final iteration through both: product except self at i = pref[i] * suff[i]
    const n: number = nums.length;
    const pref: number[] = new Array(n);
    const suff: number[] = new Array(n);
    pref[0] = 1;
    suff[n - 1] = 1;
-   let currPrefProd: number = 1;
-   let currSuffProd: number = 1;
    for (let f: number = 1, b: number = n - 2; f < n; f++, b--) {
-        currPrefProd *= nums[f - 1];
-        currSuffProd *= nums[b + 1];
-        pref[f] = currPrefProd;
-        suff[b] = currSuffProd;
+        pref[f] = pref[f - 1] * nums[f - 1];
+        suff[b] = suff[b + 1] * nums[b + 1];
    }
    for (let i: number = 0; i < n; i++) {
         nums[i] = pref[i] * suff[i];
