@@ -1,19 +1,20 @@
+interface StackNode {
+    val: number;
+    min: number;
+}
 class MinStack {
-    private stack: number[];
-    private min: number[];
+    private stack: StackNode[];
     private next: number;
     constructor() {
         // stack
         this.stack = [];
-        // min stack
-        this.min = [];
         // index
         this.next = 0;
     }
 
     push(val: number): void {
-        this.stack[this.next] = val;
-        this.min[this.next] = this.next === 0 ? val : Math.min(val, this.min[this.next - 1]);
+        const currMin: number = this.next === 0 ? val : Math.min(val, this.stack[this.next - 1].min);
+        this.stack[this.next] = {val: val, min: currMin};
         this.next++;
     }
 
@@ -22,11 +23,11 @@ class MinStack {
     }
 
     top(): number {
-        return this.stack[this.next - 1];
+        return this.stack[this.next - 1].val;
     }
 
     getMin(): number {
-        return this.min[this.next - 1];
+        return this.stack[this.next - 1].min;
     }
 }
 
