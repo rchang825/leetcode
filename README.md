@@ -127,6 +127,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
+| [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
 | [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/rchang825/leetcode/tree/master/0344-reverse-string) |
 | [0876-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0876-middle-of-the-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0908-middle-of-the-linked-list) |
+| [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
 ## Tree
 |  |
 | ------- |
@@ -319,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0278-first-bad-version](https://github.com/rchang825/leetcode/tree/master/0278-first-bad-version) |
 | [0792-binary-search](https://github.com/rchang825/leetcode/tree/master/0792-binary-search) |
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
+| [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/rchang825/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [3000-minimum-absolute-difference-between-elements-with-constraint](https://github.com/rchang825/leetcode/tree/master/3000-minimum-absolute-difference-between-elements-with-constraint) |
@@ -405,6 +408,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/rchang825/leetcode/tree/master/0055-jump-game) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
+| [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
 | [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
 ## Divide and Conquer
 |  |
