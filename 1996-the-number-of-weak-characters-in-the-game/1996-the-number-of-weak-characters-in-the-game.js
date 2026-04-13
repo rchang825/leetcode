@@ -28,12 +28,9 @@ var numberOfWeakCharacters = function(properties) {
     const stk = [];
     let weakChars = 0;
     for (let character of sorted) {
-        while (stk.length && character[1] > stk[0][1]) {
+        while (stk.length && character[0] !== stk[0] && character[1] > stk[0][1]) {
             // console.log(`${character} has higher def than top of stack ${stk[0]}`);
-            if (stk[0][0] < character[0]) { // verify atk is strictly less
-                // console.log(`and higher atk than top of stack ${stk[0]}`);
-                weakChars++;  
-            }
+            weakChars++;
             stk.shift(); // determined to be a weak character, remove
         }
         stk.unshift(character);
