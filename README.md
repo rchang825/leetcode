@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/rchang825/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1580-shuffle-the-array](https://github.com/rchang825/leetcode/tree/master/1580-shuffle-the-array) |
+| [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 | [2058-concatenation-of-array](https://github.com/rchang825/leetcode/tree/master/2058-concatenation-of-array) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
@@ -145,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/rchang825/leetcode/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/rchang825/leetcode/tree/master/0224-basic-calculator) |
 | [0232-implement-queue-using-stacks](https://github.com/rchang825/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 ## Linked List
 |  |
@@ -312,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/rchang825/leetcode/tree/master/1352-maximum-profit-in-job-scheduling) |
+| [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [3433-count-mentions-per-user](https://github.com/rchang825/leetcode/tree/master/3433-count-mentions-per-user) |
 | [3531-count-covered-buildings](https://github.com/rchang825/leetcode/tree/master/3531-count-covered-buildings) |
@@ -412,6 +415,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
+| [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 | [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
 ## Divide and Conquer
 |  |
@@ -524,6 +528,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/rchang825/leetcode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/rchang825/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+| [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 ## Data Stream
 |  |
 | ------- |
