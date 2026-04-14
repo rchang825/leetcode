@@ -11,13 +11,10 @@
  * @return {number}
  */
 var maxDepth = function(root) {
-    // base case: root is null (end of subtree or no tree at all) 
+    // maxDepth = maxDepth of going left and going right + 1
     if (!root) {
         return 0;
     }
-    // recursive case: 
-    // current node has a depth of 1
-    // recurse on the left tree and right tree to get depths of subtrees
-    // add the maximum of left and right tree depth
-    return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+    return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+
 };
