@@ -2,7 +2,7 @@
  * @param {number[]} citations
  * @return {number}
  */
-var hIndex = function(citations) {
+var hIndexBrute = function(citations) {
     /*
     sort
     0, 1, 3, 5, 6
@@ -32,4 +32,16 @@ var hIndex = function(citations) {
         }
     }
     return citations.length;
+};
+var hIndex = function(citations) {
+    citations = citations.sort((a,b) => a - b);
+    // console.log('citations', citations);
+    let i = 0;
+    const N = citations.length;
+    // possible: if paper with i gap from end has more than i citations
+    while (i < N && citations[N - 1 - i] > i) {
+        // console.log('considering h index of', i);
+        i++;
+    }
+    return i;
 };
