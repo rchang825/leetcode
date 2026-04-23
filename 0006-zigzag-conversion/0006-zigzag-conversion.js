@@ -39,7 +39,7 @@ var convert = function(s, numRows) {
             i++;
         }
         c++;
-        r = numRows - 2;
+        r -= 2;
         // diagonal up
         while (r > 0 && i < s.length) {
             zz[r][c] = s[i];
