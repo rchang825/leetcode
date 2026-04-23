@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(numbers, target) {
+var twoSumA = function(numbers, target) {
     // iterate through numbers, fixing first num
     for (let i = 0; i < numbers.length; i++) {
         // calculate second num as target - first num
@@ -18,6 +18,21 @@ var twoSum = function(numbers, target) {
                 break;
             }
             j++;
+        }
+    }
+};
+var twoSum = function(numbers, target) {
+    // start two pointers from ends (numbers is sorted)
+    let left = 0;
+    let right = numbers.length - 1;
+    while (left < right) {
+        let sum = numbers[left] + numbers[right];
+        if (sum < target) {
+            left++;
+        } else if (sum > target) {
+            right--;
+        } else {
+            return [left + 1, right + 1];
         }
     }
 };
