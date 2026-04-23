@@ -4,17 +4,6 @@
  * @return {number}
  */
 var minSubArrayLen = function(target, nums) {
-    /* brute force
-    keep track of min
-    start at left
-    if < target, keep opening to the right
-    if >= target, update min
-    close from left
-    if < target, keep opening to the right
-    if >= target, update min
-    ...
-    return min
-    */
     let min = Infinity;
     let left = 0;
     let right = 1;
@@ -31,10 +20,8 @@ var minSubArrayLen = function(target, nums) {
         if (curr >= target) {
             // console.log('valid subarray from', left, 'to', right, 'spanning', right - left + 1);
             min = Math.min(min, right - left + 1);
-            curr -= nums[left];
+            curr -= nums[left] + nums[right];
             left++;
-            right = left + 1;
-            curr = nums[left];
         } else {
             // console.log('keep going!', right);
             right++;
