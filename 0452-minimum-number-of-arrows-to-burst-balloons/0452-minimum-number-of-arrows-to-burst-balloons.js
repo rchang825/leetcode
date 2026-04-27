@@ -5,6 +5,54 @@
 var findMinArrowShots = function(points) {
     // merge intervals of balloons
     /*
+    sort asc end
+    [[10,16],[2,5],[1,6],[9,12],[2,8]]
+    [2,5],[1,6],[2,8],[9,12],[10,16]
+    declare arrows as 0
+    curr 2,5
+    1 <= 5 ? mergeable if start of next <= end of curr
+    2 <= 5 ? mergeable
+    9 <= 5 ? NOT mergeable, arrows++, curr end is now 12
+    10 <= 12 ? mergeable
+    end of points, add last arrow (arrows++)
+    return arrows
+    */
+    // sort asc end
+    let sortAscEnd = function(a, b) {
+        if (a[1] < b[1]) {
+            return -1;
+        }
+        if (a[1] > b[1]) {
+            return 1;
+        }
+        return 0;
+    }
+    points = points.sort(sortAscEnd);
+    // console.log(points);
+    // declare arrows
+    let arrows = 0;
+    // define curr as first point end
+    let curr = points[0][1];
+    // iterate through all points
+    for (let p of points) {
+        // if point start <= curr end
+            // can use same arrow, do nothing
+        // else 
+        if (p[0] > curr) {
+            // cannot use same arrow, increment arrows
+            // curr end = point end
+            arrows++;
+            curr = p[1];
+        }
+    }
+    // add last arrow
+    arrows++;
+    // return arrows
+    return arrows;
+};
+var findMinArrowShotsA = function(points) {
+    // merge intervals of balloons
+    /*
     want larger start, smaller end
     [[10,16],[2,5],[1,6],[9,12],[2,8]]
     [1,6],[2,5],[2,8],[9,12],[10,16]
