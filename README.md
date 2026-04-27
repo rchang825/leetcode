@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0322-coin-change](https://github.com/rchang825/leetcode/tree/master/0322-coin-change) |
 | [0380-insert-delete-getrandom-o1](https://github.com/rchang825/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0416-partition-equal-subset-sum](https://github.com/rchang825/leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/rchang825/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/rchang825/leetcode/tree/master/0717-1-bit-and-2-bit-characters) |
@@ -341,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0253-meeting-rooms-ii](https://github.com/rchang825/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0274-h-index](https://github.com/rchang825/leetcode/tree/master/0274-h-index) |
 | [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/rchang825/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0720-longest-word-in-dictionary](https://github.com/rchang825/leetcode/tree/master/0720-longest-word-in-dictionary) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
@@ -456,6 +458,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/rchang825/leetcode/tree/master/0055-jump-game) |
 | [0253-meeting-rooms-ii](https://github.com/rchang825/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/rchang825/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0767-reorganize-string](https://github.com/rchang825/leetcode/tree/master/0767-reorganize-string) |
 | [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
