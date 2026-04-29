@@ -13,15 +13,14 @@ var deleteDuplicates = function(head) {
     if (!head) {
         return head;
     }
+
+    let last = null;
     let prev = head;
     let curr = head.next;
-    let last = null;
 
     while (curr) {
         if (prev.val !== curr.val) {
             last = prev;
-            prev = prev.next;
-            curr = curr.next;
         } else {
             while (curr && (prev.val === curr.val)) {
                 // console.log('DUPE', curr.val);
@@ -33,10 +32,11 @@ var deleteDuplicates = function(head) {
             } else {
                last.next = curr; 
             }
-            prev = curr;
-            if (curr) {
-                curr = curr.next;
-            }
+            
+        }
+        prev = curr;
+        if (curr) {
+            curr = curr.next;
         }
     }
 
