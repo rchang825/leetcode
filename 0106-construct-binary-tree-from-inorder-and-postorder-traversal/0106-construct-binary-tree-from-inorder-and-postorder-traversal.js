@@ -11,9 +11,7 @@
  * @param {number[]} postorder
  * @return {TreeNode}
  */
-
-
-var buildTree = function(inorder, postorder) {
+var buildTreeRec = function(inorder, postorder) {
     let map = new Map();
     let i = 0;
     for (let val of inorder) {
@@ -33,4 +31,18 @@ var buildTree = function(inorder, postorder) {
         return root;
     };
     return helper(0, inorder.length - 1);
+};
+var buildTree = function(inorder, postorder) {
+    if (inorder.length === 0) {
+        return null;
+    }
+    let root = new TreeNode(postorder[postorder.length - 1]);
+    let i = 0;
+    while (inorder[i] !== root.val) {
+        i++;
+    }
+    postorder.pop();
+    root.right = buildTree(inorder.slice(i + 1), postorder);
+    root.left = buildTree(inorder.slice(0, i), postorder);
+    return root;
 };
