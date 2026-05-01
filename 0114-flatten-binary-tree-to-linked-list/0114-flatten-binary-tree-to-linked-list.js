@@ -13,6 +13,25 @@
 var flatten = function(root) {
     if (!root) {
         return;
+    } 
+    let curr = root;
+    while (curr) {
+        if (curr.left) {
+            let rightiest = curr.left;
+            while (rightiest.right) {
+                rightiest = rightiest.right;
+            }
+            rightiest.right = curr.right;
+            curr.right = curr.left;
+            curr.left = null;
+        } else {
+            curr = curr.right;
+        }
+    }
+}
+var flattenA = function(root) {
+    if (!root) {
+        return;
     }
     // flatten left
     flatten(root.left);
