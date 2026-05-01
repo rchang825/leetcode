@@ -16,29 +16,29 @@ var connect = function(root) {
     if (!root) {
         return root;
     }
-    // level order traversal: stack
+    // level order traversal: queue
     // keep track of level!
-    // define stack
-    let stk = [];
+    // define queue
+    let q = [];
     // root stays unchanged because no right nodes
-    // add first children to stack
+    // add first children to queue
     if (root.left) {
-        stk.push(root.left);
+        q.push(root.left);
     }
     if (root.right) {
-        stk.push(root.right);
+        q.push(root.right);
     }
-    // loop while stack not empty
-    while (stk.length) {
+    // loop while queue not empty
+    while (q.length) {
         // loop through all possible nodes in level including null nodes
-        let levelSize = stk.length;
+        let levelSize = q.length;
         // console.log('this level has', levelSize, 'nodes');
         for (let i = 0; i < levelSize; i++) {
-            // curr is stack pop
-            let curr = stk.shift();
+            // curr is queue dequeue
+            let curr = q.shift();
             if (curr) {
                 if (i !== levelSize - 1) {
-                    curr.next = stk[0];
+                    curr.next = q[0];
                     // console.log(curr.val, 'points to', curr.next.val);
                 } else {
                     // console.log(curr.val, 'is the rightmost node and points to nothing!');
@@ -46,10 +46,10 @@ var connect = function(root) {
                 
                 // add curr left and right children only if they exist
                 if (curr.left) {
-                    stk.push(curr.left);
+                    q.push(curr.left);
                 }
                 if (curr.right) {
-                    stk.push(curr.right);
+                    q.push(curr.right);
                 }
             }
         }
