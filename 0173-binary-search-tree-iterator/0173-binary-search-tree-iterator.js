@@ -20,23 +20,20 @@ var BSTIterator = function(root) {
         this.helper(curr.right);
     }
     this.helper(root);
-    nextIn = 0;
 };
 
 /**
  * @return {number}
  */
 BSTIterator.prototype.next = function() {
-    let val = this.trav[nextIn];
-    nextIn++;
-    return val;
+    return this.trav.shift();
 };
 
 /**
  * @return {boolean}
  */
 BSTIterator.prototype.hasNext = function() {
-    return nextIn < this.trav.length;
+    return !!this.trav.length;
 };
 
 /** 
