@@ -135,6 +135,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/rchang825/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0020-valid-parentheses](https://github.com/rchang825/leetcode/tree/master/0020-valid-parentheses) |
 | [0022-generate-parentheses](https://github.com/rchang825/leetcode/tree/master/0022-generate-parentheses) |
+| [0043-multiply-strings](https://github.com/rchang825/leetcode/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/rchang825/leetcode/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 | [0071-simplify-path](https://github.com/rchang825/leetcode/tree/master/0071-simplify-path) |
@@ -460,6 +461,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0002-add-two-numbers](https://github.com/rchang825/leetcode/tree/master/0002-add-two-numbers) |
 | [0012-integer-to-roman](https://github.com/rchang825/leetcode/tree/master/0012-integer-to-roman) |
+| [0043-multiply-strings](https://github.com/rchang825/leetcode/tree/master/0043-multiply-strings) |
 | [0062-unique-paths](https://github.com/rchang825/leetcode/tree/master/0062-unique-paths) |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/rchang825/leetcode/tree/master/0070-climbing-stairs) |
@@ -530,6 +532,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0043-multiply-strings](https://github.com/rchang825/leetcode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/rchang825/leetcode/tree/master/0054-spiral-matrix) |
 | [0067-add-binary](https://github.com/rchang825/leetcode/tree/master/0067-add-binary) |
 | [0289-game-of-life](https://github.com/rchang825/leetcode/tree/master/0289-game-of-life) |
