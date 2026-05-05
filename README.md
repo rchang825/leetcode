@@ -197,6 +197,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0138-copy-list-with-random-pointer](https://github.com/rchang825/leetcode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/rchang825/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/rchang825/leetcode/tree/master/0146-lru-cache) |
+| [0148-sort-list](https://github.com/rchang825/leetcode/tree/master/0148-sort-list) |
 | [0203-remove-linked-list-elements](https://github.com/rchang825/leetcode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/rchang825/leetcode/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0876-middle-of-the-linked-list) |
@@ -256,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0086-partition-list](https://github.com/rchang825/leetcode/tree/master/0086-partition-list) |
 | [0125-valid-palindrome](https://github.com/rchang825/leetcode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/rchang825/leetcode/tree/master/0141-linked-list-cycle) |
+| [0148-sort-list](https://github.com/rchang825/leetcode/tree/master/0148-sort-list) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/rchang825/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0253-meeting-rooms-ii](https://github.com/rchang825/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
@@ -384,6 +386,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/rchang825/leetcode/tree/master/0015-3sum) |
 | [0056-merge-intervals](https://github.com/rchang825/leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/rchang825/leetcode/tree/master/0075-sort-colors) |
+| [0148-sort-list](https://github.com/rchang825/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/rchang825/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/rchang825/leetcode/tree/master/0242-valid-anagram) |
@@ -527,6 +530,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/rchang825/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/rchang825/leetcode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/rchang825/leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+| [0148-sort-list](https://github.com/rchang825/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/rchang825/leetcode/tree/master/0190-reverse-bits) |
 | [0973-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/0973-k-closest-points-to-origin) |
@@ -651,6 +655,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/rchang825/leetcode/tree/master/0023-merge-k-sorted-lists) |
+| [0148-sort-list](https://github.com/rchang825/leetcode/tree/master/0148-sort-list) |
 ## Enumeration
 |  |
 | ------- |
