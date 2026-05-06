@@ -14,6 +14,7 @@ var combine = function(n, k) {
         if (curr.length === k) {
             // add to res
             res.push(curr);
+            return;
         }
         // if length of curr < k and not enough, return early
         if (k - curr.length > n - i) {
