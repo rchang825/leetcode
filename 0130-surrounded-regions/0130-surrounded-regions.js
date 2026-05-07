@@ -55,16 +55,9 @@ var solve = function(board) {
     for (let r = 0; r < M; r++) {
         for (let c = 0; c < N; c++) {
             if (board[r][c] === 'O') {
-                surround(r, c);
-            }
-        }
-    }
-
-    // convert the non-captured regions back to 'O'
-    for (let r = 0; r < M; r++) {
-        for (let c = 0; c < N; c++) {
-            if (board[r][c] === '-') {
-                board[r][c] = 'O';
+                board[r][c] = 'X';
+            } else if (board[r][c] === '-') {
+                board[r][c] = 'O'
             }
         }
     }
