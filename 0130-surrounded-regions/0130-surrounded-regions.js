@@ -20,20 +20,20 @@ var solve = function(board) {
         markSafe(r - 1, c);
         markSafe(r + 1, c);
     }
-    var surround = function(r, c) {
-        // if out of bounds or not 'O'
-        if (r < 0 || r === M || c < 0 || c === N || board[r][c] !== 'O') {
-            // return
-            return;
-        }
-        // cell = 'X'
-        board[r][c] = 'X';
-        // surround left, right, up, down
-        surround(r, c - 1);
-        surround(r, c + 1);
-        surround(r - 1, c);
-        surround(r + 1, c);
-    }
+    // var surround = function(r, c) {
+    //     // if out of bounds or not 'O'
+    //     if (r < 0 || r === M || c < 0 || c === N || board[r][c] !== 'O') {
+    //         // return
+    //         return;
+    //     }
+    //     // cell = 'X'
+    //     board[r][c] = 'X';
+    //     // surround left, right, up, down
+    //     surround(r, c - 1);
+    //     surround(r, c + 1);
+    //     surround(r - 1, c);
+    //     surround(r + 1, c);
+    // }
     // find bad Os and prevent them from being captured
     for (let c = 0; c < N; c++) {
         if (board[0][c] === 'O') {
