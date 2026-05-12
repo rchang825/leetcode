@@ -113,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/rchang825/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
+| [0433-minimum-genetic-mutation](https://github.com/rchang825/leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
 | [0720-longest-word-in-dictionary](https://github.com/rchang825/leetcode/tree/master/0720-longest-word-in-dictionary) |
@@ -157,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
 | [0399-evaluate-division](https://github.com/rchang825/leetcode/tree/master/0399-evaluate-division) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
+| [0433-minimum-genetic-mutation](https://github.com/rchang825/leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/rchang825/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0720-longest-word-in-dictionary](https://github.com/rchang825/leetcode/tree/master/0720-longest-word-in-dictionary) |
 | [0721-accounts-merge](https://github.com/rchang825/leetcode/tree/master/0721-accounts-merge) |
@@ -353,6 +355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0310-minimum-height-trees](https://github.com/rchang825/leetcode/tree/master/0310-minimum-height-trees) |
 | [0322-coin-change](https://github.com/rchang825/leetcode/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/rchang825/leetcode/tree/master/0399-evaluate-division) |
+| [0433-minimum-genetic-mutation](https://github.com/rchang825/leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/rchang825/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/rchang825/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
