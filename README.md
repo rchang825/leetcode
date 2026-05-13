@@ -51,6 +51,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/rchang825/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0399-evaluate-division](https://github.com/rchang825/leetcode/tree/master/0399-evaluate-division) |
 | [0416-partition-equal-subset-sum](https://github.com/rchang825/leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0427-construct-quad-tree](https://github.com/rchang825/leetcode/tree/master/0427-construct-quad-tree) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/rchang825/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [0621-task-scheduler](https://github.com/rchang825/leetcode/tree/master/0621-task-scheduler) |
@@ -297,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/rchang825/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/rchang825/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/rchang825/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0427-construct-quad-tree](https://github.com/rchang825/leetcode/tree/master/0427-construct-quad-tree) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/rchang825/leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0543-diameter-of-binary-tree](https://github.com/rchang825/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/rchang825/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
@@ -446,6 +448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/rchang825/leetcode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/rchang825/leetcode/tree/master/0200-number-of-islands) |
 | [0289-game-of-life](https://github.com/rchang825/leetcode/tree/master/0289-game-of-life) |
+| [0427-construct-quad-tree](https://github.com/rchang825/leetcode/tree/master/0427-construct-quad-tree) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/rchang825/leetcode/tree/master/0733-flood-fill) |
 | [0909-snakes-and-ladders](https://github.com/rchang825/leetcode/tree/master/0909-snakes-and-ladders) |
@@ -552,6 +555,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0148-sort-list](https://github.com/rchang825/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/rchang825/leetcode/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/rchang825/leetcode/tree/master/0190-reverse-bits) |
+| [0427-construct-quad-tree](https://github.com/rchang825/leetcode/tree/master/0427-construct-quad-tree) |
 | [0973-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/rchang825/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Bit Manipulation
