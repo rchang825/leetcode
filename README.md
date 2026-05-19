@@ -175,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
 | [1668-maximum-repeating-substring](https://github.com/rchang825/leetcode/tree/master/1668-maximum-repeating-substring) |
+| [1768-merge-strings-alternately](https://github.com/rchang825/leetcode/tree/master/1768-merge-strings-alternately) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 | [2232-minimize-result-by-adding-parentheses-to-expression](https://github.com/rchang825/leetcode/tree/master/2232-minimize-result-by-adding-parentheses-to-expression) |
@@ -281,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0876-middle-of-the-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [1055-shortest-way-to-form-string](https://github.com/rchang825/leetcode/tree/master/1055-shortest-way-to-form-string) |
+| [1768-merge-strings-alternately](https://github.com/rchang825/leetcode/tree/master/1768-merge-strings-alternately) |
 ## Tree
 |  |
 | ------- |
