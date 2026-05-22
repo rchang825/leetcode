@@ -3,24 +3,23 @@
  * @return {number[]}
  */
 var productExceptSelf = function(nums) {
-    let products = new Array(nums.length);
-    // calculate product in front and behind
-    // two loops
-    /*
-        given [1, 2, 3, 4]
-        [1, 1, 2, 6] // first pass forwards
-        [24, 12, 4, 1] 
-        [24, 12, 8, 6] // second pass backwards currProduct * first pass product
-    */  
-    let product = 1;
-    for (var i = 0; i < nums.length; i++) {
-        products[i] = product;
-        product *= nums[i];
-    } 
-    product = 1;
-    for (var i = nums.length - 1; i >= 0; i--) {
-        products[i] = products[i] * product;
-        product *= nums[i];
+    // prefix product
+    let pref = [];
+    let prod = 1;
+    for (let i = 0; i < nums.length; i++) {
+        pref.push(prod);
+        prod *= nums[i];
     }
-    return products;
+    // suffix product
+    let suff = new Array(nums.length);
+    prod = 1;
+    for (let i = nums.length - 1; i >= 0; i--) {
+        suff[i] = prod;
+        prod *= nums[i];
+    }
+    // multiply pref and suff to get product except self
+    for (let i = 0; i < nums.length; i++) {
+        nums[i] = pref[i] * suff[i];
+    }
+    return nums;
 };
