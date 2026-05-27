@@ -9,17 +9,17 @@ var isSubsequence = function(s, t) {
     let tPointer = 0;
     // iterate through s
     while (sPointer < s.length) {
-        // if sPointer and tPointer point to same character
-        if (s[sPointer] === t[tPointer]) {
-            // move sPointer
-            sPointer++;
-        }
-        // always move tPointer until out of bounds
-        if (tPointer < t.length) {
+        // move tPointer until chars at sPointer and tPointer match
+        while (s[sPointer] !== t[tPointer]) {
             tPointer++;
-        } else {
-            return false;
+            // if no more characters in t and no full match, return false
+            if (tPointer >= t.length) {
+                return false;
+            }
         }
+        // move both pointers forwards
+        sPointer++;
+        tPointer++;
     }
     // return true
     return true;
