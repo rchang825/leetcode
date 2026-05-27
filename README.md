@@ -171,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0344-reverse-string](https://github.com/rchang825/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/rchang825/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
+| [0392-is-subsequence](https://github.com/rchang825/leetcode/tree/master/0392-is-subsequence) |
 | [0399-evaluate-division](https://github.com/rchang825/leetcode/tree/master/0399-evaluate-division) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
 | [0433-minimum-genetic-mutation](https://github.com/rchang825/leetcode/tree/master/0433-minimum-genetic-mutation) |
@@ -256,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/rchang825/leetcode/tree/master/0198-house-robber) |
 | [0322-coin-change](https://github.com/rchang825/leetcode/tree/master/0322-coin-change) |
 | [0338-counting-bits](https://github.com/rchang825/leetcode/tree/master/0338-counting-bits) |
+| [0392-is-subsequence](https://github.com/rchang825/leetcode/tree/master/0392-is-subsequence) |
 | [0416-partition-equal-subset-sum](https://github.com/rchang825/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0509-fibonacci-number](https://github.com/rchang825/leetcode/tree/master/0509-fibonacci-number) |
 | [0542-01-matrix](https://github.com/rchang825/leetcode/tree/master/0542-01-matrix) |
@@ -290,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/rchang825/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0344-reverse-string](https://github.com/rchang825/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/rchang825/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
+| [0392-is-subsequence](https://github.com/rchang825/leetcode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/rchang825/leetcode/tree/master/0443-string-compression) |
 | [0876-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0876-middle-of-the-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/rchang825/leetcode/tree/master/0908-middle-of-the-linked-list) |
