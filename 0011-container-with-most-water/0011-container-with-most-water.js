@@ -3,22 +3,18 @@
  * @return {number}
  */
 var maxArea = function(height) {
-    // keep track of maxArea
-    let maxArea = 0;
-    // area = min(left, right) * size
     let left = 0;
-    let right = height.length - 1
-    // sliding window
+    let right = height.length - 1;
+    let res = 0;
     while (left < right) {
-        // calculate area and compare against maxArea
-        let area = Math.min(height[left], height[right]) * (right - left);
-        maxArea = Math.max(area, maxArea);
-        // close window from shorter end
+        // min of two extremes * delta left and right
+        let curr = Math.min(height[left], height[right]) * (right - left);
+        res = Math.max(curr, res);
         if (height[left] < height[right]) {
             left++;
         } else {
             right--;
         }
     }
-    return maxArea;
+    return res;
 };
