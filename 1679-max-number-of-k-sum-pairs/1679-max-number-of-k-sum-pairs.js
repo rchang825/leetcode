@@ -6,13 +6,13 @@
 var maxOperations = function(nums, k) {
     let ops = 0;
     nums.sort((a, b) => a - b);
-    let rightLimit = nums.length - 1;
-    while (nums[rightLimit] > k && rightLimit > 0) {
-        rightLimit--;
-    }
-    // console.log(nums);
+    // let rightLimit = nums.length - 1;
+    // while (nums[rightLimit] > k && rightLimit > 0) {
+    //     rightLimit--;
+    // }
+    // // console.log(nums);
     let left = 0;
-    let right = rightLimit;
+    let right = nums.length - 1;
     while (left < right) {
         let sum = nums[left] + nums[right];
         if (sum === k) {
