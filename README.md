@@ -89,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1732-find-the-highest-altitude](https://github.com/rchang825/leetcode/tree/master/1732-find-the-highest-altitude) |
 | [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 | [2058-concatenation-of-array](https://github.com/rchang825/leetcode/tree/master/2058-concatenation-of-array) |
+| [2215-find-the-difference-of-two-arrays](https://github.com/rchang825/leetcode/tree/master/2215-find-the-difference-of-two-arrays) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/rchang825/leetcode/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
@@ -141,6 +142,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-time-based-key-value-store](https://github.com/rchang825/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1679-max-number-of-k-sum-pairs](https://github.com/rchang825/leetcode/tree/master/1679-max-number-of-k-sum-pairs) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2215-find-the-difference-of-two-arrays](https://github.com/rchang825/leetcode/tree/master/2215-find-the-difference-of-two-arrays) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [3032-count-numbers-with-unique-digits-ii](https://github.com/rchang825/leetcode/tree/master/3032-count-numbers-with-unique-digits-ii) |
 | [3531-count-covered-buildings](https://github.com/rchang825/leetcode/tree/master/3531-count-covered-buildings) |
