@@ -6,11 +6,11 @@ var largestAltitude = function(gain) {
     // iterate through once, rewriting with the current altitude
     // keep track of the maxAlt compared to current altitude
     let maxAlt = 0;
-    let curr = gain[0];
-    for (let i = 1; i < gain.length; i++) {
-        maxAlt = Math.max(maxAlt, curr);
+    let curr = 0;
+    for (let i = 0; i < gain.length; i++) {
         curr += gain[i];
+        maxAlt = Math.max(maxAlt, curr);
     }
     // return maxAlt
-    return Math.max(maxAlt, curr);
+    return maxAlt;
 };
