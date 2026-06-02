@@ -197,6 +197,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 | [2232-minimize-result-by-adding-parentheses-to-expression](https://github.com/rchang825/leetcode/tree/master/2232-minimize-result-by-adding-parentheses-to-expression) |
+| [2390-removing-stars-from-a-string](https://github.com/rchang825/leetcode/tree/master/2390-removing-stars-from-a-string) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/rchang825/leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2900-longest-unequal-adjacent-groups-subsequence-i](https://github.com/rchang825/leetcode/tree/master/2900-longest-unequal-adjacent-groups-subsequence-i) |
 | [3606-coupon-code-validator](https://github.com/rchang825/leetcode/tree/master/3606-coupon-code-validator) |
@@ -216,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0232-implement-queue-using-stacks](https://github.com/rchang825/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
+| [2390-removing-stars-from-a-string](https://github.com/rchang825/leetcode/tree/master/2390-removing-stars-from-a-string) |
 ## Linked List
 |  |
 | ------- |
@@ -631,6 +633,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2058-concatenation-of-array](https://github.com/rchang825/leetcode/tree/master/2058-concatenation-of-array) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/rchang825/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [2390-removing-stars-from-a-string](https://github.com/rchang825/leetcode/tree/master/2390-removing-stars-from-a-string) |
 | [3433-count-mentions-per-user](https://github.com/rchang825/leetcode/tree/master/3433-count-mentions-per-user) |
 ## Geometry
 |  |
