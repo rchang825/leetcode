@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0345-reverse-vowels-of-a-string](https://github.com/rchang825/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/rchang825/leetcode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/rchang825/leetcode/tree/master/0392-is-subsequence) |
+| [0394-decode-string](https://github.com/rchang825/leetcode/tree/master/0394-decode-string) |
 | [0399-evaluate-division](https://github.com/rchang825/leetcode/tree/master/0399-evaluate-division) |
 | [0409-longest-palindrome](https://github.com/rchang825/leetcode/tree/master/0409-longest-palindrome) |
 | [0433-minimum-genetic-mutation](https://github.com/rchang825/leetcode/tree/master/0433-minimum-genetic-mutation) |
@@ -223,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0173-binary-search-tree-iterator](https://github.com/rchang825/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0224-basic-calculator](https://github.com/rchang825/leetcode/tree/master/0224-basic-calculator) |
 | [0232-implement-queue-using-stacks](https://github.com/rchang825/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0394-decode-string](https://github.com/rchang825/leetcode/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/rchang825/leetcode/tree/master/0735-asteroid-collision) |
 | [1996-the-number-of-weak-characters-in-the-game](https://github.com/rchang825/leetcode/tree/master/1996-the-number-of-weak-characters-in-the-game) |
 | [2211-count-collisions-on-a-road](https://github.com/rchang825/leetcode/tree/master/2211-count-collisions-on-a-road) |
@@ -255,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0203-remove-linked-list-elements](https://github.com/rchang825/leetcode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/rchang825/leetcode/tree/master/0206-reverse-linked-list) |
 | [0224-basic-calculator](https://github.com/rchang825/leetcode/tree/master/0224-basic-calculator) |
+| [0394-decode-string](https://github.com/rchang825/leetcode/tree/master/0394-decode-string) |
 | [0509-fibonacci-number](https://github.com/rchang825/leetcode/tree/master/0509-fibonacci-number) |
 ## Dynamic Programming
 |  |
