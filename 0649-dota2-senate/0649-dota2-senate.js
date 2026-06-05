@@ -24,20 +24,23 @@ var predictPartyVictory = function(senate) {
     D: pop, ban next R, back on queue, dNum = 5 -> DIRE
     */
     let queue = senate.split('');
+    let dNum = 0;
+    let rNum = 0;
     let bannedD = 0;
     let bannedR = 0;
-    while (queue.length) {
-        // if bannedR or bannedD go beyond number of senators, decare victory
-        if (bannedR > senate.length) {
-            return 'Dire';
+    for (let i = 0; i < senate.length; i++) {
+        if (senate[i] === 'R') {
+            rNum++;
+        } else {
+            dNum++;
         }
-        if (bannedD > senate.length) {
-            return 'Radiant';
-        }
+    }
+    while (dNum > 0 && rNum > 0) {
         let curr = queue.shift();
         if (curr === 'R') {
             if (bannedR > 0) {
                 bannedR--;
+                rNum--;
             } else {
                 // ban D and go back on queue
                 bannedD++;
@@ -46,6 +49,7 @@ var predictPartyVictory = function(senate) {
         } else {
             if (bannedD > 0) {
                 bannedD--;
+                dNum--;
             } else {
                 // ban R and go back on queue
                 bannedR++;
@@ -53,4 +57,9 @@ var predictPartyVictory = function(senate) {
             }
         }
     }
+    // return whichever party's count hasn't been eliminated
+    if (dNum === 0) {
+        return 'Radiant';
+    }
+    return 'Dire';
 };
