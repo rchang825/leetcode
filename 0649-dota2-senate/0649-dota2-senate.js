@@ -23,12 +23,6 @@ var predictPartyVictory = function(senate) {
     D: pop, ban next R, back on queue, dNum = 4
     D: pop, ban next R, back on queue, dNum = 5 -> DIRE
     */
-    let dNum = 0;
-    for (let i = 0; i < senate.length; i++) {
-        if (senate[i] === 'D') {
-            dNum++;
-        } 
-    }
     let queue = senate.split('');
     let bannedD = 0;
     let bannedR = 0;
