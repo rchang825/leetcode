@@ -10,28 +10,26 @@
  * @return {ListNode}
  */
 var reverseList = function(head) {
-    // handle empty list
+    // empty list
     if (!head) {
         return head;
     }
-    // initialize prev, curr, and temp
+    // prev, next, and curr
+    // prev and next are null
     let prev = null;
+    let next = null;
     let curr = head;
-    let temp = curr;
-
-    // iterate through linked list
-    while (curr !== null) {
-        // maintain next iterable place in original list
-        temp = temp.next;
-        // reverse curr and prev
+    // iterate while curr exists
+    while (curr) {
+        // next = curr.next (original next)
+        next = curr.next;
+        // curr.next = prev 
         curr.next = prev;
-        // update prev and curr for next iteration
+        // prev = curr
         prev = curr;
-        curr = temp;
+        // curr = next
+        curr = next;
     }
-    // at this point, curr and temp are null
-    // prev will be the last node of original list
-    // aka the head of the reversed list
     // return prev
     return prev;
 };
