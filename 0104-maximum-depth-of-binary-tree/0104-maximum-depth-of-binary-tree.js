@@ -11,10 +11,9 @@
  * @return {number}
  */
 var maxDepth = function(root) {
-    // maxDepth = maxDepth of going left and going right + 1
     if (!root) {
         return 0;
     }
-    return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
-
+    // height of a single node = 1
+    return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
 };
