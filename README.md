@@ -362,6 +362,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0814-binary-tree-pruning](https://github.com/rchang825/leetcode/tree/master/0814-binary-tree-pruning) |
 | [0872-leaf-similar-trees](https://github.com/rchang825/leetcode/tree/master/0872-leaf-similar-trees) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rchang825/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rchang825/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -397,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0814-binary-tree-pruning](https://github.com/rchang825/leetcode/tree/master/0814-binary-tree-pruning) |
 | [0872-leaf-similar-trees](https://github.com/rchang825/leetcode/tree/master/0872-leaf-similar-trees) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rchang825/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rchang825/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -427,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0909-snakes-and-ladders](https://github.com/rchang825/leetcode/tree/master/0909-snakes-and-ladders) |
 | [1036-rotting-oranges](https://github.com/rchang825/leetcode/tree/master/1036-rotting-oranges) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rchang825/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rchang825/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -458,6 +461,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0814-binary-tree-pruning](https://github.com/rchang825/leetcode/tree/master/0814-binary-tree-pruning) |
 | [0872-leaf-similar-trees](https://github.com/rchang825/leetcode/tree/master/0872-leaf-similar-trees) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/rchang825/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/rchang825/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Sorting
 |  |
 | ------- |
