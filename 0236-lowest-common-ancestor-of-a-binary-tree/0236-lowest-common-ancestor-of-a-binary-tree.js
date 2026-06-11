@@ -12,19 +12,15 @@
  * @return {TreeNode}
  */
 var lowestCommonAncestor = function(root, p, q) {
-    if (root === null || root === p || root === q) {
+    if (!root || root === p || root === q) {
         return root;
     }
-    if (p === q) {
-        return p;
-    }
+    // go as far down as possible until node does not have both as ancestors
     let left = lowestCommonAncestor(root.left, p, q);
     let right = lowestCommonAncestor(root.right, p, q);
-    if (left) {
-        if (right) {
-            return root;
-        }
-        return left;
+    if (left && right) { // neither subtree has both p and q as ancestors
+        return root;
+    } else {
+        return left || right;
     }
-    return right;
 };
