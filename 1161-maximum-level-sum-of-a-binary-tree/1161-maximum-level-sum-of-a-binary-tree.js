@@ -11,38 +11,34 @@
  * @return {number}
  */
 var maxLevelSum = function(root) {
-    // define sums array where each index corresponds to level
-    const sums = [];
-    // level order traversal and save each level's sum
-    // queue
-    const queue = [];
-    queue.push(root);
-    while (queue.length > 0) {
-        let levelSize = queue.length;
+    // level order traversal (BFS with queue)
+    // keep track of current level
+    // define max sum and max level
+    const q = [];
+    let maxSum = Number.NEGATIVE_INFINITY;
+    let maxLevel = 1;
+    let currLevel = 1;
+    // get sum of each level, update max level and max sum if needed
+    q.push(root);
+    while(q.length) {
         let currSum = 0;
-        while (levelSize > 0) {
-            let curr = queue.shift();
+        let levelSize = q.length;
+        for (let i = 0; i < levelSize; i++) {
+            let curr = q.shift();
+            currSum += curr.val;
             if (curr.left) {
-                queue.push(curr.left);
+                q.push(curr.left);
             }
             if (curr.right) {
-                queue.push(curr.right);
+                q.push(curr.right);
             }
-            currSum += curr.val;
-            levelSize--;
         }
-        sums.push(currSum);
-    }
-    // console.log(sums);
-    // return level with max sum
-    let res = 1;
-    let maxSum = sums[0];
-    for (let level = 1; level < sums.length; level++) {
-        if (sums[level] > maxSum) {
-            // console.log('updating max with', sums[level], 'at level', level + 1);
-            maxSum = sums[level];
-            res = level + 1;
+        if (currSum > maxSum) {
+            maxSum = currSum;
+            maxLevel = currLevel;
         }
+        currLevel++;
     }
-    return res;
+    // return max level
+    return maxLevel;
 };
