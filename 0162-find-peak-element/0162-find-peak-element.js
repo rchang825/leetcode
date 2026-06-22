@@ -3,18 +3,24 @@
  * @return {number}
  */
 var findPeakElement = function(nums, l = 0, r = nums.length - 1) {
-    // base case: single element -> peak
-    if (l === r) {
-        return l;
+    // calculate mid index
+    const midIndex = Math.floor((r + l) / 2);
+    const mid = nums[midIndex];
+    const leftOfMid = midIndex - 1 < 0 ? Number.NEGATIVE_INFINITY : nums[midIndex - 1];
+    const rightOfMid = midIndex + 1 === nums.length ? Number.NEGATIVE_INFINITY : nums[midIndex + 1];
+    // check for peak-ness: mid - 1 < mid < mid + 1
+    // if peak
+    if (leftOfMid < mid && mid > rightOfMid) {
+        // return mid index
+        return midIndex;
     }
-    // midpoint
-    let midIndex = Math.floor((l + r) / 2);
-    let midpoint = nums[midIndex];
-    let next = nums[midIndex + 1];
-    // otherwise, decide which half to accept (greater or default right)
-    if (next > midpoint) {
-        return findPeakElement(nums, midIndex + 1, r);
+    // otherwise
+        // iterate on "most likely" side
+        // if mid - 1 > mid, iterate on left
+    if (leftOfMid > mid) {
+        return findPeakElement(nums, 0, midIndex);
     } else {
-        return findPeakElement(nums, l, midIndex);
+        // if mid + 1 > mid, iterate on right
+        return findPeakElement(nums, midIndex + 1, r);
     }
 };
