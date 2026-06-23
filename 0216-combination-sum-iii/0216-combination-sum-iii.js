@@ -10,6 +10,9 @@ var combinationSum3 = function(k, n) {
             res.push(curr);
             return;
         }
+        if (curr.length === k) {
+            return;
+        }
         let start = curr.length > 0 ? curr[curr.length - 1] : 0;
         for (let i = start + 1; i <= 9 && i <= n - sum; i++) {
             makeCombination([...curr, i], sum + i);
