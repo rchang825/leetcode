@@ -1,31 +1,15 @@
 function tribonacci(n: number): number {
-    if (n < 1) {
-        return 0;
+    // known: T(0) = 0, T(1) = 1, T(2) = 1
+    // all others = T(n - 1) + T(n - 2) + T(n - 3)
+    // T(3) = T(2) + T(1) + T(0) = 1 + 1 + 0 = 2
+    // tabulation: build from 0 to 37
+    // memoization: build from n down to 0 (faster if n < 37)
+    const T = new Array(38);
+    T[0] = 0;
+    T[1] = 1;
+    T[2] = 1;
+    for (let i = 3; i < 38; i++) {
+        T[i] = T[i - 1] + T[i - 2] + T[i - 3];
     }
-    if (n < 3) {
-        return 1;
-    }
-    let a = 0;
-    let b = 1;
-    let c = 1;
-    
-    let res = 0;
-    for (let i: number = 3; i <= n; i++) {
-        res = a + b + c
-        a = b;
-        b = c;
-        c = res;
-    }
-    return res;
-}
-function tribonacciTab(n: number): number {
-    // known/base cases
-    // 0: 0
-    // 1: 1
-    // 2: 1
-    const trib: number[] = [0, 1, 1];
-    for (let i: number = 3; i <= n; i++) {
-        trib[i] = trib[i - 1] + trib[i - 2] + trib[i - 3];
-    }
-    return trib[n];
+    return T[n];
 };
