@@ -4,18 +4,22 @@
  */
 var rob = function(nums) {
     /*
-        running maxProfit array
-        p[0] = n[0] (rob)
-        p[1] = n[1] (rob)
-        p[2] = p[0] + n[2] (rob) OR p[1] (don't rob)
-        p[3] = p[1] + n[2] (rob) OR p[2] (don't rob)
+    max profit = rob current house + max profit(two houses ago) OR max profit of one house ago
+    either rob or don't rob
+    [1,6,4] max profit is 6
+    max profit[0] is to rob current house for 1 money
+    max profit[1] is max(rob current house, max profit[i - 1]) = max(6, 1) = 6
+    0 and 1 are set (rob 0 at 0, rob 0 or 1 at 1 always)
+    max profit[2] is max(rob curr + max profit[i - 2], max profit[i - 1]) = max(5, 6) = 6
+    return max profit[n] = 6
     */
-    const maxProfit = new Array(nums.length + 1);
-    maxProfit[nums.length] = 0;
-    maxProfit[nums.length - 1] = nums[nums.length - 1];
+    const mp = new Array(nums.length);
+    mp[0] = nums[0];
+    mp[1] = Math.max(nums[0], nums[1]);
 
-    for (let i = nums.length - 2; i >= 0; i--) {
-        maxProfit[i] = Math.max(maxProfit[i + 1], nums[i] + maxProfit[i + 2]);
+    for (let i = 2; i < nums.length; i++) {
+        mp[i] = Math.max(nums[i] + mp[i - 2], mp[i - 1]);
     }
-    return maxProfit[0];
+    
+    return mp[nums.length - 1];
 };
