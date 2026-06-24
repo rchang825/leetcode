@@ -3,6 +3,23 @@
  * @return {number}
  */
 var rob = function(nums) {
+    const mp = new Array();
+
+    var getMoney = function(n) {
+        if (n >= nums.length) {
+            return 0;
+        }
+        if (mp[n] !== undefined) {
+            return mp[n];
+        }
+        let money = Math.max(getMoney(n + 2) + nums[n], getMoney(n + 1));
+        mp[n] = money;
+        return money;
+    }
+
+    return getMoney(0);
+};
+var robTab = function(nums) {
     /*
     max profit = rob current house + max profit(two houses ago) OR max profit of one house ago
     either rob or don't rob
