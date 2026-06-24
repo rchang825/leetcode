@@ -3,6 +3,23 @@
  * @return {number}
  */
 var minCostClimbingStairs = function(cost) {
+    const dp = new Array(cost.length + 1);
+    
+    dp[0] = 0;
+    dp[1] = 0;
+    
+    var getCost = function(n) {
+        if (dp[n] !== undefined) {
+            return dp[n];
+        }
+        let res = Math.min(getCost(n - 1) + cost[n - 1], getCost(n - 2) + cost[n - 2]);
+        dp[n] = res;
+        return res;
+    }
+
+    return getCost(cost.length);
+};
+var minCostClimbingStairsTab = function(cost) {
     // can either start from 0 or 1 min (cost from 0, cost from 1)
     // min cost to get to 0 = 0
     // min cost to get to 1 = 0
@@ -11,8 +28,7 @@ var minCostClimbingStairs = function(cost) {
     // min cost to get to n = min(dp[n - 2] + cost[n - 2], dp[n - 1] + cost[n - 1])
     
     // starting with 2, build to n
-    const n = cost.length + 1
-    const dp = new Array(n);
+    const dp = new Array(cost.length + 1);
     
     dp[0] = 0;
     dp[1] = 0;
