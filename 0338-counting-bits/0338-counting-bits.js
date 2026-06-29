@@ -3,22 +3,18 @@
  * @return {number[]}
  */
 var countBits = function(n) {
-    // ans starts off as [0]
-    let ans = [0];
-    // keep track of current starting bit (starting at 1)
-    let sq = 1;
+    const ans = new Array(n + 1);
+    ans[0] = 0;
+    let square = 1;
 
-    // iterate from 1 to n
-    for (var i = 1; i <= n; i++) {
-        // if curr = next square
-        if (i === sq * 2) {
-            // update current square
-            sq *= 2;
+    for (let i = 1; i <= n; i++) {
+        // if curr = square
+        if (i === square * 2) {
+            square *= 2;
         }
         // curr - current square = target
-        // num bits = memoed target num bits + 1
-        ans[i] = 1 + ans[i - sq];
+        ans[i] = ans[i - square] + 1;
     }
-    // return ans
+
     return ans;
 };
