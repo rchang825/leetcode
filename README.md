@@ -695,6 +695,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0222-count-complete-tree-nodes](https://github.com/rchang825/leetcode/tree/master/0222-count-complete-tree-nodes) |
 | [0338-counting-bits](https://github.com/rchang825/leetcode/tree/master/0338-counting-bits) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/rchang825/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
+| [1318-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/rchang825/leetcode/tree/master/1318-minimum-flips-to-make-a-or-b-equal-to-c) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/rchang825/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [3314-construct-the-minimum-bitwise-array-i](https://github.com/rchang825/leetcode/tree/master/3314-construct-the-minimum-bitwise-array-i) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/rchang825/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
