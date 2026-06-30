@@ -1,6 +1,10 @@
-var TrieNode = function(word, children) {
-    this.word = word ===undefined ? false : word;
-    this.children = children === undefined ? {} : children;
+var zeroIndexChar = function(ch) {
+    return ch.charCodeAt(0) - 'a'.charCodeAt(0);
+}
+
+var TrieNode = function() {
+    this.children = new Array(26);
+    this.isWord = false;
 }
 
 var Trie = function() {
@@ -13,13 +17,17 @@ var Trie = function() {
  */
 Trie.prototype.insert = function(word) {
     let curr = this.root;
-    for (var i = 0; i < word.length; i++) {
-        if (!curr.children.hasOwnProperty(word.charAt(i))) {
-            curr.children[word.charAt(i)] = new TrieNode();
+  // iterate through all characters of word
+    for (let ch of word) {
+    // if the character isn't defined yet, define it
+        let i = zeroIndexChar(ch);
+        if (curr.children[i] === undefined) {
+            curr.children[i] = new TrieNode();
         }
-        curr = curr.children[word.charAt(i)];
+        curr = curr.children[i];
     }
-    curr.word = true; // make a word here
+  // mark last character as endpoint of a word
+  curr.isWord = true;
 };
 
 /** 
@@ -28,15 +36,17 @@ Trie.prototype.insert = function(word) {
  */
 Trie.prototype.search = function(word) {
     let curr = this.root;
-    for (var i = 0; i < word.length; i++) {
-        if (curr.children[word.charAt(i)]) {
-            curr = curr.children[word.charAt(i)];
-        } else {
+  // iterate through all characters of word
+    for (let ch of word) {
+    // if the character isn't defined yet, return false immediately
+        let i = zeroIndexChar(ch);
+        if (curr.children[i] === undefined) {
             return false;
         }
+        curr = curr.children[i];
     }
-    // final check: is this a word?
-    return curr.word;
+  // return isWord (prefix does not count)
+  return curr.isWord;
 };
 
 /** 
@@ -45,14 +55,17 @@ Trie.prototype.search = function(word) {
  */
 Trie.prototype.startsWith = function(prefix) {
     let curr = this.root;
-    for (var i = 0; i < prefix.length; i++) {
-        if (curr.children[prefix.charAt(i)]) {
-            curr = curr.children[prefix.charAt(i)];
-        } else {
+  // iterate through all characters of prefix
+    for (let ch of prefix) {
+    // if the character isn't defined yet, return false immediately
+        let i = zeroIndexChar(ch);
+        if (curr.children[i] === undefined) {
             return false;
         }
+        curr = curr.children[i];
     }
-    return true;
+  // return true regardless of whether isWord is true
+  return true;   
 };
 
 /** 
